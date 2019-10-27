@@ -1,0 +1,83 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>peach-patterns</title>
+    <meta name="description" content="PeachCloud Pattern Library">
+    <meta name="author" content="glyph">
+    <link rel="stylesheet" href="css/peach_ui.css">
+    <style>@import url("css/_variables.css");</style>
+    </head>
+
+    <body style="background-color: var(--near-black);">
+        <!-- NETWORK CARD -->
+        <div class="card center">
+            </br>
+            <div class="center" style="width: 60%;">
+                <div class="center circle circle-success" title="PeachCloud network mode and status">
+                    <!-- NETWORK STATUS ICON -->
+                    <img class="circle-icon" style="position: absolute; width: 50%" src="icons/router.svg">
+                </div>
+            </div>
+            <h3 id="ssid" class="center font-near-black" title="SSID">peach</h3>
+            <p id="ip" class="center font-near-black" title="IP address of the PeachCloud device">11.11.11.10</p>
+            </br>
+            <!-- SWITCH GRID -->
+            <div class="card-grid" style="position: relative;">
+                <!-- LEFT SWITCH ICON -->
+                <img class="icon-inactive switch-icon-left" style="width: 50%" title="WiFi Client Mode" src="icons/wifi.svg">
+                <!-- ROUNDED SWITCH -->
+                <div class="center">
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                <!-- RIGHT SWITCH ICON -->
+                <img class="icon-active switch-icon-right" style="width: 50%" title="Access Point Mode" src="icons/router.svg">
+            </div>
+            </br>
+            </br>
+            <!-- CARD GRID -->
+            <!-- row of icons representing network statistics -->
+            <div class="card-grid">
+                <img class="grid-icon-1 icon" title="Devices" src="icons/devices.svg">
+                <img class="grid-icon-2 icon" title="Download" src="icons/down-arrow.svg">
+                <img class="grid-icon-3 icon" title="Upload" src="icons/up-arrow.svg">
+            </div>
+            <!-- row of values representing current network state -->
+            <div class="card-grid">
+                <label class="grid-label-1 label-medium" title="Number of connected devices">6</label>
+                <label class="grid-label-2 label-medium" title="Data download total in MB">21.7</label>
+                <label class="grid-label-3 label-medium" title="Data upload total in MB">3.4</label>
+            </div>
+            <!-- row of labels for each network statistic column -->
+            <div class="card-grid">
+                <label class="grid-label-1 label-small">DEVICES</label>
+                <label class="grid-label-2 label-small">DOWNLOAD</label>
+                <label class="grid-label-3 label-small">UPLOAD</label>
+            </div>
+            </br>
+        </div>
+        </br>
+        </br>    
+        <h2>Circles</h2>
+        <!-- CIRCLES -->
+        <div style="width: 250px;">
+            <div class="circle">Circle</div>
+            </br>
+            <div class="circle circle-success">Success</div>
+            </br>
+            <div class="circle circle-warning">Warning</div>
+            </br>
+            <div class="circle circle-error">Error</div>
+        </div>
+        </br>
+        <hr>
+        <h2>Icons</h2>
+        <!-- ICONS -->
+        <div style="height: 450px; width: 250px;">
+        </div>
+    </body>
+</html>
