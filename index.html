@@ -10,10 +10,91 @@
     <style>@import url("css/_variables.css");</style>
     </head>
 
-    <body style="background-color: var(--near-black);">
+    <body style="background-color: var(--near-white); width: 500px;">
+        <h1>PeachCloud Pattern Library</h1>
+        <br>    
+        <h3>Switches</h3>
+        <p>Rounded switch</p>
+        <!-- ROUNDED SWITCH -->
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+        <br>
+        <hr style="width: 100%;">
+        <h3>Circles</h3>
+        <!-- CIRCLES -->
+        <div style="width: 250px;">
+            <div class="circle">Empty</div>
+            <br>
+            <div class="circle circle-success">Success</div>
+            <br>
+            <div class="circle circle-warning">Warning</div>
+            <br>
+            <div class="circle circle-error">Error</div>
+        </div>
+        <br>
+        <hr style="width: 100%;">
+        <h3>Icons</h3>
+        <!-- ICONS -->
+        <!-- ACTIVE ICON -->
+        <p>Active icon</p>
+        <img class="icon-active" style="width: 50%" src="icons/wifi.svg">
+        <!-- INACTIVE ICON -->
+        <p>Inactive icon</p>
+        <img class="icon-inactive" style="width: 50%" src="icons/wifi.svg">
+        <br>
+        <hr style="width: 100%;">
+        <h3>Labels</h3>
+        <!-- LABELS -->
+        <!-- SMALL LABEL -->
+        <label class="label-small">Small label</label>
+        <label class="label-small">SMALL LABEL</label>
+        <br>
+        <!-- MEDIUM LABEL -->
+        <label class="label-medium">Medium label</label>
+        <label class="label-medium">MEDIUM LABEL</label>
+        <br>
+        <!-- LARGE LABEL -->
+        <label class="label-large">Large label</label>
+        <label class="label-large">LARGE LABEL</label>
+        <br>
+        <hr style="width: 100%;">
+        <h3>Grids</h3>
+        <p>Three-across icon grid</p>
+        <!-- THREE-ACROSS ICON GRID -->
+        <div class="card-grid">
+            <img class="grid-icon-1 icon" title="Devices" src="icons/devices.svg">
+            <img class="grid-icon-2 icon" title="Download" src="icons/down-arrow.svg">
+            <img class="grid-icon-3 icon" title="Upload" src="icons/up-arrow.svg">
+        </div>
+        <p>Three-across label grid</p>
+        <!-- THREE-ACROSS LABEL GRID -->
+        <div class="card-grid">
+            <label class="grid-label-1 label-medium">Label 1</label>
+            <label class="grid-label-2 label-medium">Label 2</label>
+            <label class="grid-label-3 label-medium">Label 3</label>
+        </div>
+        <p>Three-across switch and icons grid</p>
+        <!-- THREE-ACROSS SWITCH AND ICONS GRID -->
+        <div class="card-grid">
+            <!-- LEFT SWITCH ICON -->
+            <img class="icon-inactive switch-icon-left" style="width: 50%" src="icons/wifi.svg">
+            <!-- ROUNDED SWITCH -->
+            <div class="center">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <!-- RIGHT SWITCH ICON -->
+            <img class="icon-active switch-icon-right" style="width: 50%" src="icons/router.svg">
+        </div>
+        <hr style="width: 100%;">
+        <h3>Network Card</h3>
         <!-- NETWORK CARD -->
-        <div class="card center">
-            </br>
+        <div class="card">
+            <br>
             <div class="center" style="width: 60%;">
                 <div class="center circle circle-success" title="PeachCloud network mode and status">
                     <!-- NETWORK STATUS ICON -->
@@ -22,7 +103,7 @@
             </div>
             <h3 id="ssid" class="center font-near-black" title="SSID">peach</h3>
             <p id="ip" class="center font-near-black" title="IP address of the PeachCloud device">11.11.11.10</p>
-            </br>
+            <br>
             <!-- SWITCH GRID -->
             <div class="card-grid" style="position: relative;">
                 <!-- LEFT SWITCH ICON -->
@@ -37,8 +118,8 @@
                 <!-- RIGHT SWITCH ICON -->
                 <img class="icon-active switch-icon-right" style="width: 50%" title="Access Point Mode" src="icons/router.svg">
             </div>
-            </br>
-            </br>
+            <br>
+            <br>
             <!-- CARD GRID -->
             <!-- row of icons representing network statistics -->
             <div class="card-grid">
@@ -58,26 +139,7 @@
                 <label class="grid-label-2 label-small">DOWNLOAD</label>
                 <label class="grid-label-3 label-small">UPLOAD</label>
             </div>
-            </br>
-        </div>
-        </br>
-        </br>    
-        <h2>Circles</h2>
-        <!-- CIRCLES -->
-        <div style="width: 250px;">
-            <div class="circle">Circle</div>
-            </br>
-            <div class="circle circle-success">Success</div>
-            </br>
-            <div class="circle circle-warning">Warning</div>
-            </br>
-            <div class="circle circle-error">Error</div>
-        </div>
-        </br>
-        <hr>
-        <h2>Icons</h2>
-        <!-- ICONS -->
-        <div style="height: 450px; width: 250px;">
+            <br>
         </div>
     </body>
 </html>

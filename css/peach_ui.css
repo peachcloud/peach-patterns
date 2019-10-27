@@ -37,6 +37,7 @@ body {
     position: relative;
     text-align: center;
     width: 50%;
+    box-shadow: var(--box-shadow-3);
 }
 
 .circle-icon {
@@ -45,21 +46,18 @@ body {
 
 .circle-success {
     background-color: var(--color-success);
-    box-shadow: var(--box-shadow-3);
     color: var(--white);
     font-size: var(--font-size-4);
 }
 
 .circle-warning {
     background-color: var(--color-warning);
-    box-shadow: var(--box-shadow-3);
     color: var(--white);
     font-size: var(--font-size-4);
 }
 
 .circle-error {
     background-color: var(--color-failure);
-    box-shadow: var(--box-shadow-3);
     color: var(--white);
     font-size: var(--font-size-4);
 }
