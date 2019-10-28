@@ -6,6 +6,14 @@ circle-icon
 circle-success
 circle-warning
 circle-error
+deg-0
+deg-45
+deg-90
+deg-135
+deg-180
+deg-225
+deg-270
+deg-315
 flex-grid
 font-near-black
 font-gray
@@ -22,6 +30,7 @@ icon-inactive
 label-small
 label-medium
 label-large
+radial-menu
 switch
 switch-icon-left
 switch-icon-right
