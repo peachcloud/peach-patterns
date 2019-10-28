@@ -1,9 +1,9 @@
 @import url('_variables.css');
 
 body {
+    align-content: center;
     display: flex;
     flex-direction: column;
-    align-content: center;
 }
 
 .card {
@@ -18,6 +18,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     grid-gap: 10px;
+    align-items: center;
     justify-content: center;
     vertical-align: bottom;
     width: 100%;
@@ -32,12 +33,12 @@ body {
 
 .circle {
     border-radius: 50%;
+    box-shadow: var(--box-shadow-3);
     line-height: 0;
     padding: 25% 0;
     position: relative;
     text-align: center;
     width: 50%;
-    box-shadow: var(--box-shadow-3);
 }
 
 .circle-icon {
@@ -81,9 +82,9 @@ body {
 }
 
 .grid-icon-1 {
+    align-self: center;
     grid-column: 1;
     grid-row: 1;
-    align-self: center;
     justify-self: center;
     margin-bottom: 10px;
     max-width: 55%;
@@ -91,9 +92,9 @@ body {
 }
 
 .grid-icon-2 {
+    align-self: center;
     grid-column: 2;
     grid-row: 1;
-    align-self: center;
     justify-self: center;
     margin-bottom: 10px;
     max-width: 55%;
@@ -101,9 +102,9 @@ body {
 }
 
 .grid-icon-3 {
+    align-self: center;
     grid-column: 3;
     grid-row: 1;
-    align-self: center;
     justify-self: center;
     margin-bottom: 10px;
     max-width: 55%;
@@ -111,25 +112,25 @@ body {
 }
 
 .grid-label-1 {
+    align-self: center;
     grid-column: 1;
     grid-row: 1;
-    align-self: center;
     justify-self: center;
     text-align: center;
 }
 
 .grid-label-2 {
+    align-self: center;
     grid-column: 2;
     grid-row: 1;
-    align-self: center;
     justify-self: center;
     text-align: center;
 }
 
 .grid-label-3 {
+    align-self: center;
     grid-column: 3;
     grid-row: 1;
-    align-self: center;
     justify-self: center;
     text-align: center;
 }
@@ -148,9 +149,9 @@ body {
 }
 
 .label-small {
+    color: var(--gray);
     font-family: var(--sans-serif);
     font-size: var(--font-size-7);
-    color: var(--gray);
 }
 
 .label-medium {
@@ -163,69 +164,70 @@ body {
 
  /* The switch - the box around the slider */
 .switch {
-    position: relative;
     display: inline-block;
-    width: 60px;
     height: 34px;
+    position: relative;
+    width: 60px;
 }
 
 /* Hide default HTML checkbox */
 .switch input {
+    height: 0;
     opacity: 0;
     width: 0;
-    height: 0;
 }
 
 .switch-icon-left {
+    align-self: center;
     grid-column: 1;
     grid-row: 1;
-    align-self: center;
     justify-self: center;
 }
 
 .switch-icon-right {
+    align-self: center;
     grid-column: 3;
     grid-row: 1;
-    align-self: center;
     justify-self: center;
 }
-  /* The slider */
+
+/* The slider */
 .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
+    background-color: var(--moon-gray);
     bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
     transition: .4s;
+    -webkit-transition: .4s;
 }
 
 .slider:before {
-    position: absolute;
+    background-color: var(--white);
+    bottom: 4px;
     content: "";
     height: 26px;
-    width: 26px;
     left: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
+    position: absolute;
     transition: .4s;
+    -webkit-transition: .4s;
+    width: 26px;
 }
 
 input:checked + .slider {
-    background-color: #111;
+    background-color: var(--near-black);
 }
 
 input:focus + .slider {
-    box-shadow: 0 0 1px #111;
+    box-shadow: 0 0 1px var(--near-black);
 }
 
 input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
+    -webkit-transform: translateX(26px);
 }
 
 /* Rounded sliders */
