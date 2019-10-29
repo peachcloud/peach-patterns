@@ -1,10 +1,37 @@
 @import url('_variables.css');
 
+/* ------------------------------ *\
+ * peach_ui.css
+ *
+ * Index
+ * - BODY
+ * - CARDS
+ * - ALIGNMENT
+ * - CIRCLES
+ * - DEGREES
+ * - GRIDS
+ * - FONTS
+ * - ICONS
+ * - LABELS
+ * - RADIAL MENU
+ * - SWITCHES / SLIDERS
+ * - PARAGRAPHS
+ *
+\* ------------------------------ */
+
+/*
+ * BODY
+ */
+
 body {
     align-content: center;
     display: flex;
     flex-direction: column;
 }
+
+/*
+ * CARDS
+ */
 
 .card {
     background-color: var(--near-white);
@@ -20,9 +47,12 @@ body {
     grid-gap: 10px;
     align-items: center;
     justify-content: center;
-    vertical-align: bottom;
     width: 100%;
 }
+
+/*
+ * ALIGNMENT
+ */
 
 .center {
     display: block;
@@ -31,17 +61,22 @@ body {
     text-align: center;
 }
 
+/*
+ * CIRCLES
+ */
+
 .circle {
     border-radius: 50%;
     box-shadow: var(--box-shadow-3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     line-height: 0;
     padding: 25% 0;
     position: relative;
-    text-align: center;
     width: 50%;
+    height: 0;
 }
-
-.circle-icon { transform: translate(-50%, -50%); }
 
 .circle-success {
     background-color: var(--color-success);
@@ -61,36 +96,62 @@ body {
     font-size: var(--font-size-4);
 }
 
-/* Positions around the radial menu (used to position menu icons)
+/* radial-circle: circle for radial-menu links */
+.radial-circle {
+    align-items: center;
+    background-color: var(--near-white);
+    border-radius: 50%;
+    box-shadow: var(--box-shadow-3);
+    display: flex;
+}
 
+/*
+ * DEGREES
+ */
+
+/* degree-x: positions around the radial menu (used to position menu icons)
 /* 12em = half the width of the radial menu (wrapper) */
-.deg-0 { transform: translate(12em); }
+.degree-0 {
+    transform: translate(12em);
+}
 
-.deg-45 { transform: rotate(45deg) translate(12em) rotate(-45deg); }
+.degree-45 {
+    transform: rotate(45deg) translate(12em) rotate(-45deg);
+}
 
-.deg-90 { transform: rotate(90deg) translate(12em) rotate(-90deg); }
+.degree-90 {
+    transform: rotate(90deg) translate(12em) rotate(-90deg);
+}
 
-.deg-135 { transform: rotate(135deg) translate(12em) rotate(-135deg); }
+.degree-135 {
+    transform: rotate(135deg) translate(12em) rotate(-135deg);
+}
 
-.deg-180 { transform: translate(-12em); }
+.degree-180 {
+    transform: translate(-12em);
+}
 
-.deg-225 { transform: rotate(225deg) translate(12em) rotate(-225deg); }
+.degree-225 {
+    transform: rotate(225deg) translate(12em) rotate(-225deg);
+}
 
-.deg-270 { transform: rotate(270deg) translate(12em) rotate(-270deg); }
+.degree-270 {
+    transform: rotate(270deg) translate(12em) rotate(-270deg);
+}
 
-.deg-315 { transform: rotate(315deg) translate(12em) rotate(-315deg); }
+.degree-315 {
+    transform: rotate(315deg) translate(12em) rotate(-315deg);
+}
+
+/*
+ * GRIDS
+ */
 
 .flex-grid {
     align-content: space-between;
     display: flex;
     justify-content: center;
 }
-
-.font-near-black { color: var(--near-black); }
-
-.font-gray { color: var(--gray); }
-
-.font-light-gray { color: var(--silver); }
 
 .grid-icon-1 {
     align-self: center;
@@ -146,18 +207,44 @@ body {
     text-align: center;
 }
 
-.icon {
-    max-height: 100%;
-    width: 80%;
+/*
+ * FONTS
+ */
+
+.font-near-black {
+    color: var(--near-black);
 }
 
+.font-gray {
+    color: var(--gray);
+}
+
+.font-light-gray {
+    color: var(--silver);
+}
+
+/*
+ * ICONS
+ */
+
+.icon {
+    max-height: 100%;
+    width: 50%;
+}
+
+/* icon-active: sets color of icon svg to near-black */
 .icon-active {
     filter: invert(0%) sepia(1%) saturate(4171%) hue-rotate(79deg) brightness(86%) contrast(87%);
 }
 
+/* icon-inactive: sets color of icon svg to gray */
 .icon-inactive {
     filter: invert(72%) sepia(8%) saturate(14%) hue-rotate(316deg) brightness(93%) contrast(92%);
 }
+
+/*
+ * LABELS
+ */
 
 .label-small {
     color: var(--gray);
@@ -165,23 +252,29 @@ body {
     font-size: var(--font-size-7);
 }
 
-.label-medium { font-size: var(--font-size-3); }
+.label-medium {
+    font-size: var(--font-size-3);
+}
 
-.label-large { font-size: var(--font-size-2); }
+.label-large {
+    font-size: var(--font-size-2);
+}
 
+/*
+ * RADIAL MENU
+ */
+
+/* radial-menu: a circular menu container */
 .radial-menu {
-    border: dashed 1px;
     border-radius: 50%;
     height: 24em;
     margin: 1.75em auto 0;
-    /* 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2)) */
-    padding: 2.8em;
+    padding: 4em;
     position: relative;
     width: 24em;
 }
 
 .radial-menu a {
-    display: block;
     height: 4em;
     left: 50%;
     margin: -2em;
@@ -190,12 +283,20 @@ body {
     width: 4em;
 }
 
-.radial-menu img {
-    display: block;
-    width: 100%;
+.radial-menu div {
+    height: 4em;
+    left: 50%;
+    margin: -2em;
+    position: absolute;
+    top: 50%;
+    width: 4em;
 }
 
-/* The switch - the box around the slider */
+/*
+ * SWITCHES / SLIDERS
+ */
+
+/* switch: the box around the slider */
 .switch {
     display: inline-block;
     height: 34px;
@@ -203,7 +304,7 @@ body {
     width: 60px;
 }
 
-/* Hide default HTML checkbox */
+/* hide default HTML checkbox */
 .switch input {
     height: 0;
     opacity: 0;
@@ -224,7 +325,6 @@ body {
     justify-self: center;
 }
 
-/* The slider */
 .slider {
     background-color: var(--moon-gray);
     bottom: 0;
@@ -249,9 +349,13 @@ body {
     width: 26px;
 }
 
-input:checked + .slider { background-color: var(--near-black); }
+input:checked + .slider {
+    background-color: var(--near-black);
+}
 
-input:focus + .slider { box-shadow: 0 0 1px var(--near-black); }
+input:focus + .slider {
+    box-shadow: 0 0 1px var(--near-black);
+}
 
 input:checked + .slider:before {
     -ms-transform: translateX(26px);
@@ -259,9 +363,18 @@ input:checked + .slider:before {
     -webkit-transform: translateX(26px);
 }
 
-/* Rounded sliders */
-.slider.round { border-radius: 34px; }
+.slider.round {
+    border-radius: 34px;
+}
 
-.slider.round:before { border-radius: 50%; }
+.slider.round:before {
+    border-radius: 50%;
+}
 
-p { font-family: var(--sans-serif); }
+/*
+ * PARAGRAPHS
+ */
+
+p {
+    font-family: var(--sans-serif);
+}

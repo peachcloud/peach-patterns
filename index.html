@@ -27,7 +27,7 @@
         <div style="width: 250px;">
             <!-- STANDARD CIRCLE -->
             <p>Standard circle</p>
-            <div class="circle">Empty</div>
+            <div class="circle"></div>
             <br>
             <!-- SUCCESS CIRCLE -->
             <p>Success circle</p>
@@ -44,7 +44,7 @@
             <p>Standard circle with active icon</p>
             <div class="circle">
                 <!-- NETWORK STATUS ICON -->
-                <img class="circle-icon" style="position: absolute; width: 50%" src="icons/router.svg">
+                <img class="icon" style="position: absolute; width: 50%" src="icons/router.svg">
             </div>
             <br>
         </div>
@@ -116,7 +116,7 @@
             <div class="center" style="width: 60%;">
                 <div class="center circle circle-success" title="PeachCloud network mode and status">
                     <!-- NETWORK STATUS ICON -->
-                    <img class="circle-icon" style="position: absolute; width: 50%" src="icons/router.svg">
+                    <img class="icon" style="position: absolute; width: 50%" src="icons/router.svg">
                 </div>
             </div>
             <h3 id="ssid" class="center font-near-black" title="SSID">peach</h3>
@@ -164,19 +164,51 @@
         <!-- RADIAL MENU -->
         <div class="radial-menu">
             <!-- center of menu -->
-            <a href="#"><img class="icon" src="icons/smile.svg"></a>
+            <a class="flex-grid" href="#">
+                <img class="center icon" src="icons/smile.svg">
+            </a>
             <!-- bottom-right -->
-            <a href="#" class="deg-45"><img class="icon" src="icons/envelope.svg"></a>
+            <!-- MESSAGES LINK AND ICON -->
+            <a href="#" class="degree-45">
+                <div class="radial-circle">
+                    <img class="center icon" src="icons/envelope.svg">
+                </div>
+            </a>
             <!-- bottom-middle -->
-            <a href="#" class="deg-90"><img class="icon" src="icons/book.svg"></a>
+            <!-- PEACHCLOUD GUIDEBOOK LINK AND ICON -->
+            <a href="#" class="degree-90">
+                <div class="radial-circle">
+                    <img class="center icon" src="icons/book.svg">
+                </div>
+            </a>
             <!-- bottom-left -->
-            <a href="#" class="deg-135"><img class="icon" src="icons/cog.svg"></a>
+            <!-- SYSTEM SETTINGS LINK AND ICON -->
+            <a href="#" class="degree-135">
+                <div class="radial-circle">
+                    <img class="center icon" src="icons/cog.svg">
+                </div>
+            </a>
             <!-- top-left -->
-            <a href="#" class="deg-225"><img class="icon" src="icons/heart-pulse.svg"></a>
+            <!-- SYSTEM STATUS LINK AND ICON -->
+            <a href="#" class="degree-225">
+                <div class="radial-circle">
+                    <img class="center icon" src="icons/heart-pulse.svg">
+                </div>
+            </a>
             <!-- top-middle -->
-            <a href="#" class="deg-270"><img class="icon" src="icons/glyph.png"></a>
+            <!-- CURRENT USER LINK AND ICON -->
+            <a href="#" class="degree-270">
+                <div class="radial-circle">
+                    <img class="center icon" style="width: 100%;" src="icons/glyph.png">
+                </div>
+            </a>
             <!-- top-right -->
-            <a href="#" class="deg-315"><img class="icon" src="icons/users.svg"></a>
+            <!-- PEERS LINK AND ICON -->
+            <a href="#" class="degree-315">
+                <div class="radial-circle">
+                    <img class="center icon" src="icons/users.svg">
+                </div>
+            </a>
         </div>
     </body>
 </html>
