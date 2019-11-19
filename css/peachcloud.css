@@ -5,6 +5,7 @@
  *
  * Index
  * - BODY
+ * - BUTTONS
  * - CARDS
  * - ALIGNMENT
  * - CIRCLES
@@ -30,6 +31,24 @@ body {
 }
 
 /*
+ * BUTTONS
+ */
+
+.button {
+    background-color: var(--moon-gray);
+    border: 1px solid var(--near-black);
+    color: var(--near-black);
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: var(--font-size-6);
+    width: 80%;
+    margin-bottom: 5px;
+}
+
+/*
  * CARDS
  */
 
@@ -51,7 +70,6 @@ body {
 }
 
 .card-grid-two {
-    border: 1px solid var(--near-black);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
@@ -276,6 +294,7 @@ body {
 
 .grid-column-2 {
     grid-column: 2;
+    justify-self: left;
 }
 
 .grid-column-3 {
