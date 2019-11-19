@@ -6,7 +6,7 @@
     <title>peach-patterns</title>
     <meta name="description" content="PeachCloud Pattern Library">
     <meta name="author" content="glyph">
-    <link rel="stylesheet" href="css/peach_ui.css">
+    <link rel="stylesheet" href="css/peachcloud.css">
     <style>@import url("css/_variables.css");</style>
     </head>
 
@@ -98,21 +98,21 @@
         <h3>Grids</h3>
         <p>Three-across icon grid</p>
         <!-- THREE-ACROSS ICON GRID -->
-        <div class="card-grid">
-            <img class="grid-icon-1 icon" title="Devices" src="icons/devices.svg">
-            <img class="grid-icon-2 icon" title="Download" src="icons/down-arrow.svg">
-            <img class="grid-icon-3 icon" title="Upload" src="icons/up-arrow.svg">
+        <div class="card-grid-three">
+            <img class="grid-three-icon-1 icon" title="Devices" src="icons/devices.svg">
+            <img class="grid-three-icon-2 icon" title="Download" src="icons/down-arrow.svg">
+            <img class="grid-three-icon-3 icon" title="Upload" src="icons/up-arrow.svg">
         </div>
         <p>Three-across label grid</p>
         <!-- THREE-ACROSS LABEL GRID -->
-        <div class="card-grid">
-            <label class="grid-label-1 label-medium">Label 1</label>
-            <label class="grid-label-2 label-medium">Label 2</label>
-            <label class="grid-label-3 label-medium">Label 3</label>
+        <div class="card-grid-three">
+            <label class="grid-three-label-1 label-medium">Label 1</label>
+            <label class="grid-three-label-2 label-medium">Label 2</label>
+            <label class="grid-three-label-3 label-medium">Label 3</label>
         </div>
         <p>Three-across switch and icons grid</p>
         <!-- THREE-ACROSS SWITCH AND ICONS GRID -->
-        <div class="card-grid">
+        <div class="card-grid-three">
             <!-- LEFT SWITCH ICON -->
             <img class="icon-inactive switch-icon-left" style="width: 50%" src="icons/wifi.svg">
             <!-- ROUNDED SWITCH -->
@@ -142,6 +142,31 @@
             <img class="nav-icon nav-icon-right icon-inactive" src="icons/question-circle.svg">
         </div>
         <hr style="width: 100%;">
+        <h3>Network Info Box</h3>
+        <!-- NETWORK INFO BOX -->
+        <div class="card">
+            <br>
+            <div class="card-grid-two" style="position: relative;" title="PeachCloud network mode and status">
+                <!-- NETWORK STATUS ICON -->
+                <!-- icon with label molecule -->
+                <!-- left column -->
+                <div class="grid-column-1">
+                    <img src="icons/router.svg">
+                    <label class="center label-small" title="Access Point Status">ONLINE</label>
+                </div>
+                <!-- right column -->
+                <div class="grid-column-2" style="justify-self: left;">
+                    <label class="label-small" title="Network Mode">MODE</label>
+                    <p class="card-text" title="Network Mode">Access Point</p>
+                    <label class="label-small" title="Access Point SSID">SSID</label>
+                    <p class="card-text" title="SSID">peach</p>
+                    <label class="label-small" title="Access Point IP Address">IP</label>
+                    <p class="card-text" title="IP">11.11.11.10</p>
+                </div>
+            </div>
+            <br>
+        </div>
+        <hr style="width: 100%;">
         <h3>Network Card</h3>
         <!-- NETWORK CARD -->
         <div class="card">
@@ -156,7 +181,7 @@
             <p id="ip" class="center font-near-black" title="IP address of the PeachCloud device">11.11.11.10</p>
             <br>
             <!-- SWITCH GRID -->
-            <div class="card-grid" style="position: relative;">
+            <div class="card-grid-three" style="position: relative;">
                 <!-- LEFT SWITCH ICON -->
                 <img class="icon-inactive switch-icon-left" style="width: 50%" title="WiFi Client Mode" src="icons/wifi.svg">
                 <!-- ROUNDED SWITCH -->
@@ -173,22 +198,22 @@
             <br>
             <!-- CARD GRID -->
             <!-- row of icons representing network statistics -->
-            <div class="card-grid">
-                <img class="grid-icon-1 icon" title="Devices" src="icons/devices.svg">
-                <img class="grid-icon-2 icon" title="Download" src="icons/down-arrow.svg">
-                <img class="grid-icon-3 icon" title="Upload" src="icons/up-arrow.svg">
+            <div class="card-grid-three">
+                <img class="grid-three-icon-1 icon" title="Devices" src="icons/devices.svg">
+                <img class="grid-three-icon-2 icon" title="Download" src="icons/down-arrow.svg">
+                <img class="grid-three-icon-3 icon" title="Upload" src="icons/up-arrow.svg">
             </div>
             <!-- row of values representing current network state -->
-            <div class="card-grid">
-                <label class="grid-label-1 label-medium" title="Number of connected devices">6</label>
-                <label class="grid-label-2 label-medium" title="Data download total in MB">21.7</label>
-                <label class="grid-label-3 label-medium" title="Data upload total in MB">3.4</label>
+            <div class="card-grid-three">
+                <label class="grid-three-label-1 label-medium" title="Number of connected devices">6</label>
+                <label class="grid-three-label-2 label-medium" title="Data download total in MB">21.7</label>
+                <label class="grid-three-label-3 label-medium" title="Data upload total in MB">3.4</label>
             </div>
             <!-- row of labels for each network statistic column -->
-            <div class="card-grid">
-                <label class="grid-label-1 label-small">DEVICES</label>
-                <label class="grid-label-2 label-small">DOWNLOAD</label>
-                <label class="grid-label-3 label-small">UPLOAD</label>
+            <div class="card-grid-three">
+                <label class="grid-three-label-1 label-small">DEVICES</label>
+                <label class="grid-three-label-2 label-small">DOWNLOAD</label>
+                <label class="grid-three-label-3 label-small">UPLOAD</label>
             </div>
             <br>
         </div>
