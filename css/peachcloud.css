@@ -138,15 +138,6 @@ body {
     font-size: var(--font-size-4);
 }
 
-/* radial-circle: circle for radial-menu links */
-.radial-circle {
-    align-items: center;
-    background-color: var(--near-white);
-    border-radius: 50%;
-    box-shadow: var(--box-shadow-3);
-    display: flex;
-}
-
 /* quartered-circle: circle for the center of radial-menu */
 
 .quartered-circle {
@@ -159,7 +150,20 @@ body {
     height: 50%;
 }
 
+.quarter-link {
+    left: 50%;
+    margin: -2em;
+    top: 50%;
+}
+
+.quarter-icon {
+    position: absolute;
+    bottom: 1em;
+    left: 1.5em;
+}
+
 .top-left {
+    position: relative;
     border-top-left-radius: 100%;
     background: #09f;
     float: left;
@@ -167,6 +171,7 @@ body {
 }
 
 .top-right {
+    position: relative;
     border-top-right-radius: 100%;
     background: #666;
     float: right;
@@ -174,16 +179,21 @@ body {
 }
 
 .bottom-left {
+    position: relative;
     border-bottom-left-radius: 100%;
     background: #aaa;
     float: left;
     box-shadow: var(--box-shadow-2);
+    bottom: 0;
 }
 
 .bottom-right{
+    position: relative;
     border-bottom-right-radius: 100%;
     background: #333;
     float: right;
+    right: 0;
+    bottom: 0;
 }
 
 /*
@@ -323,7 +333,23 @@ body {
 
 .icon {
     max-height: 100%;
-    width: 50%;
+    width: 3em;
+}
+
+.icon-small {
+    width: 1em;
+}
+
+.icon-medium {
+    width: 2em;
+}
+
+.icon-large {
+    width: 3em;
+}
+
+.icon-100 {
+    width: 100%;
 }
 
 /* icon-active: sets color of icon svg to near-black */
@@ -397,7 +423,7 @@ body {
     width: 24em;
 }
 
-.radial-menu a {
+.radial-link-position {
     height: 4em;
     left: 50%;
     margin: -2em;
@@ -406,13 +432,26 @@ body {
     width: 4em;
 }
 
-.radial-menu div {
+/* radial-circle: circle for radial-menu links */
+.radial-circle {
+    align-items: center;
+    background-color: var(--near-white);
+    border-radius: 50%;
+    box-shadow: var(--box-shadow-3);
+    display: flex;
     height: 4em;
     left: 50%;
     margin: -2em;
     position: absolute;
     top: 50%;
     width: 4em;
+}
+
+.radial-center-circle {
+    height: 45%;
+    position: absolute;
+    top: 50%;
+    width: 45%;
 }
 
 /*

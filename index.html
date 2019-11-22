@@ -50,7 +50,7 @@
             <p>Standard circle with active icon</p>
             <div class="circle">
                 <!-- NETWORK STATUS ICON -->
-                <img class="icon" style="position: absolute; width: 50%" src="icons/router.svg">
+                <img class="icon" style="position: absolute;" src="icons/router.svg">
             </div>
             <br>
             <!-- QUARTERED CIRCLE -->
@@ -234,7 +234,7 @@
                 <!-- icon with label molecule -->
                 <!-- left column -->
                 <div class="grid-column-1">
-                    <img src="icons/router.svg">
+                    <img class="center icon" src="icons/router.svg">
                     <label class="center label-small" title="Access Point Status">ONLINE</label>
                 </div>
                 <!-- right column -->
@@ -277,51 +277,64 @@
         <hr style="width: 100%;">
         <h3>Radial Menu</h3>
         <!-- RADIAL MENU -->
-        <div class="radial-menu">
+        <div class="radial-menu flex-grid">
             <!-- center of menu -->
-            <a class="flex-grid" href="#">
-                <img class="center icon" src="icons/smile.svg">
-            </a>
+            <div class="center center-vert radial-center-circle">
+                <a class="quarter-link" href="#top-left">
+                    <div class="quarter top-left"></div>
+                </a>
+                <a class="quarter-link" href="#top-right">
+                    <div class="quarter top-right flex-grid">
+                        <img class="icon quarter-icon" src="icons/wifi.svg">
+                    </div>
+                </a>
+                <a class="quarter-link" href="#bottom-left">
+                    <div class="quarter bottom-left"></div>
+                </a>
+                <a class="quarter-link" href="#bottom-right">
+                    <div class="quarter bottom-right"></div>
+                </a>
+            </div>
             <!-- bottom-right -->
             <!-- MESSAGES LINK AND ICON -->
-            <a href="#" class="degree-45">
+            <a href="#" class="radial-link-position degree-45">
                 <div class="radial-circle">
-                    <img class="center icon" src="icons/envelope.svg">
+                    <img class="center icon icon-medium" src="icons/envelope.svg">
                 </div>
             </a>
             <!-- bottom-middle -->
             <!-- PEACHCLOUD GUIDEBOOK LINK AND ICON -->
-            <a href="#" class="degree-90">
+            <a href="#" class="radial-link-position degree-90">
                 <div class="radial-circle">
-                    <img class="center icon" src="icons/book.svg">
+                    <img class="center icon icon-medium" src="icons/book.svg">
                 </div>
             </a>
             <!-- bottom-left -->
             <!-- SYSTEM SETTINGS LINK AND ICON -->
-            <a href="#" class="degree-135">
+            <a href="#" class="radial-link-position degree-135">
                 <div class="radial-circle">
-                    <img class="center icon" src="icons/cog.svg">
+                    <img class="center icon icon-medium" src="icons/cog.svg">
                 </div>
             </a>
             <!-- top-left -->
             <!-- SYSTEM STATUS LINK AND ICON -->
-            <a href="#" class="degree-225">
+            <a href="#" class="radial-link-position degree-225">
                 <div class="radial-circle">
-                    <img class="center icon" src="icons/heart-pulse.svg">
+                    <img class="center icon icon-medium" src="icons/heart-pulse.svg">
                 </div>
             </a>
             <!-- top-middle -->
             <!-- CURRENT USER LINK AND ICON -->
-            <a href="#" class="degree-270">
+            <a href="#" class="radial-link-position degree-270">
                 <div class="radial-circle">
-                    <img class="center icon" style="width: 100%;" src="icons/glyph.png">
+                    <img class="center icon icon-100" src="icons/glyph.png">
                 </div>
             </a>
             <!-- top-right -->
             <!-- PEERS LINK AND ICON -->
-            <a href="#" class="degree-315">
+            <a href="#" class="radial-link-position degree-315">
                 <div class="radial-circle">
-                    <img class="center icon" src="icons/users.svg">
+                    <img class="center icon icon-medium" src="icons/users.svg">
                 </div>
             </a>
         </div>
