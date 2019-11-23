@@ -381,6 +381,27 @@ body {
 }
 
 /*
+ * LISTS
+ */
+
+.list {
+    padding-left: 0;
+    margin-left: 0;
+    max-width: var(--max-width-6);
+    border: 1px solid var(--light-silver);
+    border-radius: var(--border-radius-2);
+    list-style-type: none;
+    font-family: var(--sans-serif);
+}
+
+.list-item {
+    padding: 1rem;
+    border: 1px solid var(--light-silver);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+/*
  * NAVIGATION
  */
 
