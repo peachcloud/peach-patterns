@@ -204,57 +204,6 @@
         <hr style="width: 100%;">
         <h3>Network Card</h3>
         <!-- NETWORK CARD -->
-        <div class="card">
-            <br>
-            <div class="center" style="width: 60%;">
-                <div class="center circle circle-success" title="PeachCloud network mode and status">
-                    <!-- NETWORK STATUS ICON -->
-                    <img class="icon" style="position: absolute; width: 50%" src="icons/router.svg">
-                </div>
-            </div>
-            <h3 id="ssid" class="center font-near-black" title="SSID">peach</h3>
-            <p id="ip" class="center font-near-black" title="IP address of the PeachCloud device">11.11.11.10</p>
-            <br>
-            <!-- SWITCH GRID -->
-            <div class="card-grid-three" style="position: relative;">
-                <!-- LEFT SWITCH ICON -->
-                <img class="icon-inactive switch-icon-left" style="width: 50%" title="WiFi Client Mode" src="icons/wifi.svg">
-                <!-- ROUNDED SWITCH -->
-                <div class="center">
-                    <label class="switch">
-                        <input type="checkbox">
-                        <span class="slider round"></span>
-                    </label>
-                </div>
-                <!-- RIGHT SWITCH ICON -->
-                <img class="icon-active switch-icon-right" style="width: 50%" title="Access Point Mode" src="icons/router.svg">
-            </div>
-            <br>
-            <br>
-            <!-- CARD GRID -->
-            <!-- row of icons representing network statistics -->
-            <div class="card-grid-three">
-                <img class="grid-three-icon-1 icon" title="Devices" src="icons/devices.svg">
-                <img class="grid-three-icon-2 icon" title="Download" src="icons/down-arrow.svg">
-                <img class="grid-three-icon-3 icon" title="Upload" src="icons/up-arrow.svg">
-            </div>
-            <!-- row of values representing current network state -->
-            <div class="card-grid-three">
-                <label class="grid-three-label-1 label-medium" title="Number of connected devices">6</label>
-                <label class="grid-three-label-2 label-medium" title="Data download total in MB">21.7</label>
-                <label class="grid-three-label-3 label-medium" title="Data upload total in MB">3.4</label>
-            </div>
-            <!-- row of labels for each network statistic column -->
-            <div class="card-grid-three">
-                <label class="grid-three-label-1 label-small">DEVICES</label>
-                <label class="grid-three-label-2 label-small">DOWNLOAD</label>
-                <label class="grid-three-label-3 label-small">UPLOAD</label>
-            </div>
-            <br>
-        </div>
-        <hr style="width: 100%;">
-        <h3>Network Card (alt)</h3>
-        <!-- NETWORK CARD -->
         <!-- NETWORK INFO BOX -->
         <div class="card" style="border: 2px solid var(--near-black); border-radius: 2px;">
             <br>
@@ -302,6 +251,70 @@
                 </div>
             </div>
             <br>
+        </div>
+        <hr style="width: 100%;">
+        <h3>Network Card with Nav Bars</h3>
+        <div style="background-color: var(--near-black); width: 300px;"> 
+            <!-- Top nav bar -->
+            <div class="nav-bar">
+                <img class="nav-icon nav-icon-left" src="icons/peach-icon.png">
+                <img class="nav-icon nav-icon-right icon-inactive" src="icons/exit.svg">
+                <img class="nav-icon nav-icon-right icon-inactive" src="icons/power-switch.svg">
+            </div>
+            <!-- NETWORK CARD -->
+            <!-- NETWORK INFO BOX -->
+            <div class="card center">
+                <br>
+                <div class="card-grid-two" style="position: relative;" title="PeachCloud network mode and status">
+                    <!-- NETWORK STATUS ICON -->
+                    <!-- icon with label molecule -->
+                    <!-- left column -->
+                    <div class="grid-column-1">
+                        <img class="center icon" src="icons/router.svg">
+                        <label class="center label-small" title="Access Point Status">ONLINE</label>
+                    </div>
+                    <!-- right column -->
+                    <div class="grid-column-2">
+                        <label class="label-small" title="Network Mode">MODE</label>
+                        <p class="card-text" title="Network Mode">Access Point</p>
+                        <label class="label-small" title="Access Point SSID">SSID</label>
+                        <p class="card-text" title="SSID">peach</p>
+                        <label class="label-small" title="Access Point IP Address">IP</label>
+                        <p class="card-text" title="IP">11.11.11.10</p>
+                    </div>
+                </div>
+                <br>
+                <button class="button center">Connect to WiFi</button>
+                <button class="button center">List WiFi Networks</button>
+                <br>
+                <!-- CARD GRID -->
+                <div style="padding-left: 5px; padding-right: 5px;">
+                    <!-- row of icons representing network statistics -->
+                    <div class="card-grid-three">
+                        <img class="grid-three-icon-1 icon" title="Devices" src="icons/devices.svg">
+                        <img class="grid-three-icon-2 icon" title="Download" src="icons/down-arrow.svg">
+                        <img class="grid-three-icon-3 icon" title="Upload" src="icons/up-arrow.svg">
+                    </div>
+                    <!-- row of values representing current network state -->
+                    <div class="card-grid-three">
+                        <label class="grid-three-label-1 label-medium" title="Number of connected devices">6</label>
+                        <label class="grid-three-label-2 label-medium" title="Data download total in MB">21.7</label>
+                        <label class="grid-three-label-3 label-medium" title="Data upload total in MB">3.4</label>
+                    </div>
+                    <!-- row of labels for each network statistic column -->
+                    <div class="card-grid-three">
+                        <label class="grid-three-label-1 label-small">DEVICES</label>
+                        <label class="grid-three-label-2 label-small">DOWNLOAD</label>
+                        <label class="grid-three-label-3 label-small">UPLOAD</label>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <!-- Bottom nav bar -->
+            <div class="nav-bar">
+                <img class="nav-icon nav-icon-left" src="icons/hermies.png">
+                <img class="nav-icon nav-icon-right icon-inactive" src="icons/question-circle.svg">
+            </div>
         </div>
         <hr style="width: 100%;">
         <h3>Radial Menu</h3>
