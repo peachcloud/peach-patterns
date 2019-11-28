@@ -441,8 +441,6 @@ body {
 
 .nav-bar {
     background-color: var(--moon-gray);
-    display: flex;
-    justify-content: flex-end;
     width: 100%;
     height: 2em;
     padding-top: 10px;
@@ -452,15 +450,15 @@ body {
 .nav-icon {
     width: auto;
     height: 90%;
-    align-self: center;
 }
 
 .nav-icon-left {
-    margin-right: auto;
+    float: left;
     padding-left: 10px;
 }
 
 .nav-icon-right {
+    float: right;
     padding-right: 10px;
 }
 
