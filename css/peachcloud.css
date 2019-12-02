@@ -13,6 +13,7 @@
  * - GRIDS
  * - FONTS
  * - ICONS
+ * - INPUTS
  * - LABELS
  * - RADIAL MENU
  * - SWITCHES / SLIDERS
@@ -44,7 +45,7 @@ body {
     text-decoration: none;
     font-size: var(--font-size-5);
     font-family: var(--sans-serif);
-    width: 80%;
+    width: 200px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -93,7 +94,7 @@ body {
     margin: 0;
     font-size: var(--font-size-5);
     padding-bottom: 3px;
-    padding-right: 5px;
+    padding-right: 1rem;
 }
 
 /*
@@ -378,7 +379,6 @@ body {
 .input {
     margin-top: 5px;
     margin-bottom: 1rem;
-    max-width: 90%;
 }
 
 .form {

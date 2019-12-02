@@ -6,7 +6,7 @@ A pattern library for building and maintaining PeachCloud user interfaces.
 
 `css/css_class_names` contains a simple list of all the custom css class names used in the PeachCloud design system. This list builds on `css/_variables.css`, which contains css variables drawn from the [Tachyons](http://tachyons.io/) library.
 
-`css/peach_ui.css` contains all the custom css class definitions used in the PeachCloud design system.
+`css/peachcloud.css` contains all the custom css class definitions used in the PeachCloud design system.
 
 _Note: This is a work-in-progress._
 
