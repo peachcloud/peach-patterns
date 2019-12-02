@@ -83,6 +83,15 @@
         <img class="icon-inactive" style="width: 50%" src="icons/wifi.svg">
         <br>
         <hr style="width: 100%;">
+        <h3>Inputs</h3>
+        <!-- INPUTS -->
+        <p>Standard input with button</p>
+        <!-- Standard input with button -->
+        <div class="form">
+            <input class="input" type="password" placeholder="Password" title="Password for access point"></input>
+            <button class="button">Connect</button>
+        </div>
+        <hr style="width: 100%;">
         <h3>Labels</h3>
         <!-- LABELS -->
         <!-- SMALL LABEL -->
@@ -226,7 +235,6 @@
         <h3>Network Info Box</h3>
         <!-- NETWORK INFO BOX -->
         <div class="card">
-            <br>
             <div class="card-grid-two" style="position: relative;" title="PeachCloud network mode and status">
                 <!-- NETWORK STATUS ICON -->
                 <!-- icon with label molecule -->
@@ -245,14 +253,12 @@
                     <p class="card-text" title="IP">11.11.11.10</p>
                 </div>
             </div>
-            <br>
         </div>
         <hr style="width: 100%;">
         <h3>Network Card</h3>
         <!-- NETWORK CARD -->
         <!-- NETWORK INFO BOX -->
         <div class="card">
-            <br>
             <div class="card-grid-two" style="position: relative;" title="PeachCloud network mode and status">
                 <!-- NETWORK STATUS ICON -->
                 <!-- icon with label molecule -->
@@ -271,12 +277,10 @@
                     <p class="card-text" title="IP">11.11.11.10</p>
                 </div>
             </div>
-            <br>
             <button class="button center">Connect to WiFi</button>
             <button class="button center">List WiFi Networks</button>
-            <br>
             <!-- CARD GRID -->
-            <div style="padding-left: 5px; padding-right: 5px;">
+            <div class="card-grid">
                 <!-- row of icons representing network statistics -->
                 <div class="card-grid-three">
                     <img class="grid-three-icon-1 icon" title="Devices" src="icons/devices.svg">
@@ -296,7 +300,6 @@
                     <label class="grid-three-label-3 label-small">UPLOAD</label>
                 </div>
             </div>
-            <br>
         </div>
         <hr style="width: 100%;">
         <h3>Network Card with Nav Bars</h3>
@@ -312,7 +315,6 @@
             <!-- NETWORK CARD -->
             <!-- NETWORK INFO BOX -->
             <div class="card center">
-                <br>
                 <div class="card-grid-two" style="position: relative;" title="PeachCloud network mode and status">
                     <!-- NETWORK STATUS ICON -->
                     <!-- icon with label molecule -->
@@ -331,12 +333,10 @@
                         <p class="card-text" title="IP">11.11.11.10</p>
                     </div>
                 </div>
-                <br>
                 <button class="button center">Connect to WiFi</button>
                 <button class="button center">List WiFi Networks</button>
-                <br>
                 <!-- CARD GRID -->
-                <div style="padding-left: 5px; padding-right: 5px;">
+                <div class="card-grid">
                     <!-- row of icons representing network statistics -->
                     <div class="card-grid-three">
                         <img class="grid-three-icon-1 icon" title="Devices" src="icons/devices.svg">
@@ -356,7 +356,6 @@
                         <label class="grid-three-label-3 label-small">UPLOAD</label>
                     </div>
                 </div>
-                <br>
             </div>
             <br>
             <!-- Bottom nav bar -->
@@ -376,7 +375,6 @@
                 <img class="nav-icon nav-icon-right icon-active" src="icons/exit.svg">
                 <img class="nav-icon nav-icon-right icon-active" src="icons/power-switch.svg">
             </div>
-            <br>
             <!-- NETWORK CARD -->
             <!-- NETWORK INFO BOX -->
             <div class="card center">
@@ -404,7 +402,53 @@
                     </ul>
                 </div>
             </div>
-            <br>
+            <!-- Bottom nav bar -->
+            <div class="nav-bar">
+                <img class="nav-icon nav-icon-left" src="icons/hermies.png">
+                <img class="nav-icon nav-icon-right icon-active" src="icons/question-circle.svg">
+            </div>
+        </div>
+        <hr style="width: 100%;">
+        <h3>Network Details with Nav Bars</h3>
+        <!-- Network details with nav bars -->
+        <div style="background-color: var(--moon-gray);"> 
+            <!-- Top nav bar -->
+            <div class="nav-bar">
+                <img class="nav-icon nav-icon-left" src="icons/peach-icon.png">
+                <img class="nav-icon nav-icon-left icon-active" src="icons/back.svg">
+                <img class="nav-icon nav-icon-right icon-active" src="icons/exit.svg">
+                <img class="nav-icon nav-icon-right icon-active" src="icons/power-switch.svg">
+            </div>
+            <!-- NETWORK CARD -->
+            <!-- NETWORK INFO BOX -->
+            <div class="card center">
+                <!-- status -->
+                <!-- signal strength -->
+                <!-- ip of client (if connected) -->
+                <!-- input for password -->
+                <!-- connect button -->
+                <div class="card-grid-two" style="position: relative;" title="PeachCloud network mode and status">
+                    <!-- NETWORK STATUS ICON -->
+                    <!-- icon with label molecule -->
+                    <!-- left column -->
+                    <div class="grid-column-1">
+                        <img class="center icon" src="icons/router.svg">
+                        <label class="center label-small" title="Access Point Status">ONLINE</label>
+                    </div>
+                    <!-- right column -->
+                    <div class="grid-column-2">
+                        <label class="label-small" title="Access Point SSID">SSID</label>
+                        <p class="card-text" title="SSID">FoodBarn WiFi</p>
+                        <label class="label-small" title="Signal Strength">SIGNAL</label>
+                        <p class="card-text" title="Signal strength of WiFi access point">73%</p>
+                    </div>
+                </div>
+                <!-- Standard input with button -->
+                <div class="form">
+                    <input class="center input" type="password" placeholder="Password" title="Password for WiFi access point"></input>
+                    <button class="center button">Connect</button>
+                </div>
+            </div>
             <!-- Bottom nav bar -->
             <div class="nav-bar">
                 <img class="nav-icon nav-icon-left" src="icons/hermies.png">
