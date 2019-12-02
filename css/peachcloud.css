@@ -59,6 +59,8 @@ body {
     max-width: var(--max-width-5);
     position: relative;
     box-shadow: var(--box-shadow-3);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .card-grid {
@@ -374,7 +376,7 @@ body {
 
 .input {
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 1rem;
     max-width: 90%;
 }
 
