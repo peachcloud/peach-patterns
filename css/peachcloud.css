@@ -93,6 +93,7 @@ body {
     margin: 0;
     font-size: var(--font-size-5);
     padding-bottom: 3px;
+    padding-right: 5px;
 }
 
 /*
@@ -627,4 +628,5 @@ input:checked + .slider:before {
 
 p {
     font-family: var(--sans-serif);
+    overflow-wrap: anywhere;
 }
