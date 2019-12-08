@@ -474,6 +474,7 @@ body {
 .nav-icon {
     width: auto;
     height: 90%;
+    cursor: pointer;
 }
 
 .nav-icon-left {
