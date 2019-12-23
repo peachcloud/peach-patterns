@@ -4,22 +4,42 @@
  * peachcloud.css
  *
  * Index
+ * - ALIGNMENT
  * - BODY
  * - BUTTONS
  * - CARDS
- * - ALIGNMENT
  * - CIRCLES
  * - DEGREES
  * - GRIDS
  * - FONTS
+ * - FORMS (incl. inputs)
  * - ICONS
- * - INPUTS
  * - LABELS
  * - RADIAL MENU
  * - SWITCHES / SLIDERS
  * - PARAGRAPHS
  *
 \* ------------------------------ */
+
+/*
+ * ALIGNMENT
+ */
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.center-vert {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 /*
  * BODY
@@ -95,22 +115,6 @@ body {
     font-size: var(--font-size-5);
     padding-bottom: 3px;
     padding-right: 1rem;
-}
-
-/*
- * ALIGNMENT
- */
-
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.center-vert {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 /*
@@ -338,6 +342,19 @@ body {
 }
 
 /*
+ * FORMS (incl. inputs)
+ */
+
+.form {
+    padding: 1.5rem;
+}
+
+.input {
+    margin-top: 5px;
+    margin-bottom: 1rem;
+}
+
+/*
  * ICONS
  */
 
@@ -370,19 +387,6 @@ body {
 /* icon-inactive: sets color of icon svg to gray */
 .icon-inactive {
     filter: invert(72%) sepia(8%) saturate(14%) hue-rotate(316deg) brightness(93%) contrast(92%);
-}
-
-/*
- * INPUTS
- */
-
-.input {
-    margin-top: 5px;
-    margin-bottom: 1rem;
-}
-
-.form {
-    padding-bottom: 1rem;
 }
 
 /*

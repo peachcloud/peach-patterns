@@ -278,7 +278,7 @@
                 </div>
             </div>
             <button class="button center">Enable WiFi</button>
-            <button class="button center">List WiFi Networks</button>
+            <button class="button center">Add WiFi Network</button>
             <!-- CARD GRID -->
             <div class="card-grid">
                 <!-- row of icons representing network statistics -->
@@ -333,7 +333,7 @@
                     </div>
                 </div>
                 <button class="button center">Enable WiFi</button>
-                <button class="button center">List WiFi Networks</button>
+                <button class="button center">Add WiFi Network</button>
                 <!-- CARD GRID -->
                 <div class="card-grid">
                     <!-- row of icons representing network statistics -->
@@ -377,7 +377,7 @@
             <!-- NETWORK INFO BOX -->
             <div class="card center">
                 <div class="list-container">
-                    <h1 class="bold title-medium">WiFi Networks</h1>
+                    <h1 class="bold center-text title-medium">WiFi Networks</h1>
                     <ul class="list">
                         <li class="list-item">
                             <img class="icon icon-active icon-medium list-icon" src="icons/wifi.svg">
@@ -448,6 +448,37 @@
                     <button class="center button">Connect</button>
                     <button class="center button">Cancel</button>
                 </div>
+            </div>
+            <!-- Bottom nav bar -->
+            <div class="nav-bar">
+                <img class="nav-icon nav-icon-left" src="icons/hermies.png">
+                <img class="nav-icon nav-icon-right icon-active" src="icons/question-circle.svg">
+            </div>
+        </div>
+        <hr style="width: 100%;">
+        <h3>Network Add Credentials with Nav Bars</h3>
+        <!-- Network add credentials with nav bars -->
+        <div style="background-color: var(--moon-gray);"> 
+            <!-- Top nav bar -->
+            <div class="nav-bar">
+                <img class="nav-icon nav-icon-left" src="icons/peach-icon.png">
+                <img class="nav-icon nav-icon-left icon-active" src="icons/back.svg">
+                <img class="nav-icon nav-icon-right icon-active" src="icons/exit.svg">
+                <img class="nav-icon nav-icon-right icon-active" src="icons/power-switch.svg">
+            </div>
+            <!-- NETWORK CARD -->
+            <!-- NETWORK ADD CREDENTIALS FORM -->
+            <div class="card center">
+                <!-- Standard input with button -->
+                <div class="form">
+                    <h1 class="bold center-text title-medium">Add WiFi Network</h1>
+                    <input class="center input" type="text" placeholder="SSID" title="Network name (SSID) for WiFi access point"></input>
+                    <input class="center input" type="password" placeholder="Password" title="Password for WiFi access point"></input>
+                    <button class="center button">Connect</button>
+                    <button class="center button">Cancel</button>
+                    <p class="label-small" style="padding-left: 5px;">This website will be unresponsive while the access point is disabled and the WiFi connection attempt is made.</p>
+                </div>
+                <!-- NOTE : used to share ux information with the user -->
             </div>
             <!-- Bottom nav bar -->
             <div class="nav-bar">
