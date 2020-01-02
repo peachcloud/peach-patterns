@@ -15,6 +15,10 @@
  * - FORMS (incl. inputs)
  * - ICONS
  * - LABELS
+ * - LINKS
+ * - LISTS
+ * - MAIN
+ * - NAVIGATION
  * - RADIAL MENU
  * - SWITCHES / SLIDERS
  * - PARAGRAPHS
@@ -116,7 +120,7 @@ body {
     justify-content: center;
     justify-items: center;
     padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1rem;
     width: 100%;
 }
 
@@ -390,7 +394,7 @@ body {
 }
 
 .icon-medium {
-    width: 2em;
+    width: 2.5em;
 }
 
 .icon-large {
@@ -416,7 +420,6 @@ body {
  */
 
 .label-small {
-    color: var(--gray);
     font-family: var(--sans-serif);
     font-size: var(--font-size-7);
     display: block;
@@ -424,10 +427,12 @@ body {
 
 .label-medium {
     font-size: var(--font-size-3);
+    display: block;
 }
 
 .label-large {
     font-size: var(--font-size-2);
+    display: block;
 }
 
 /*
@@ -484,6 +489,18 @@ body {
     justify-self: left;
     grid-column: 1;
     grid-row: 2;
+}
+
+/*
+ * MAIN
+ */
+
+main {
+    width: 300px;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
 }
 
 /*

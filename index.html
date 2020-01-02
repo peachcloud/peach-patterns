@@ -76,6 +76,15 @@
             <hr style="width: 100%;">
             <h3>Icons</h3>
             <!-- ICONS -->
+            <!-- SMALL ICON -->
+            <p>Small icon</p>
+            <img class="icon icon-small" src="icons/cog.svg">
+            <!-- MEDIUM ICON -->
+            <p>Medium icon</p>
+            <img class="icon icon-medium" src="icons/router.svg">
+            <!-- LARGE ICON -->
+            <p>Large icon</p>
+            <img class="icon icon-large" src="icons/heart-pulse.svg">
             <!-- ACTIVE ICON -->
             <p>Active icon</p>
             <img class="icon-active" style="width: 50%" src="icons/wifi.svg">
@@ -97,8 +106,8 @@
             <!-- LABELS -->
             <!-- SMALL LABEL -->
             <p>Small label</p>
-            <label class="label-small">Small label</label>
-            <label class="label-small">SMALL LABEL</label>
+            <label class="label-small font-gray">Small label</label>
+            <label class="label-small font-gray">SMALL LABEL</label>
             <br>
             <!-- MEDIUM LABEL -->
             <p>Medium label</p>
@@ -141,6 +150,59 @@
                 <!-- RIGHT SWITCH ICON -->
                 <img class="icon-active switch-icon-right" style="width: 50%" src="icons/router.svg">
             </div>
+            <p>Vertical grid with icon and value</p>
+            <!-- VERTICAL GRID WITH ICON AND VALUE -->
+            <div class="card-grid-vert">
+                <img class="icon" title="Download" src="icons/devices.svg">
+                <label class="label-medium" title="Number of connected devices" style="padding-top: 0.5rem;">4</label>
+            </div>
+            <p>Vertical grid with icon, value and unit</p>
+            <!-- VERTICAL GRID WITH ICON, VALUE AND UNIT -->
+            <div class="card-grid-vert">
+                <img class="icon" title="Download" src="icons/down-arrow.svg">
+                <div class="flex-grid" style="padding-top: 0.5rem;">
+                    <label class="label-medium" style="padding-right: 3px;" title="Data download total in MB">21.7</label>
+                    <label class="label-small font-near-black">GB</label>
+                </div>
+            </div>
+            <p>Vertical grid with icon, value, unit and label</p>
+            <!-- VERTICAL GRID WITH ICON, VALUE, UNIT AND LABEL -->
+            <div class="card-grid-vert">
+                <img class="icon" title="Download" src="icons/down-arrow.svg">
+                <div class="flex-grid" style="padding-top: 0.5rem;">
+                    <label class="label-medium" style="padding-right: 3px;" title="Data download total in MB">158</label>
+                    <label class="label-small font-near-black">MB</label>
+                </div>
+                <label class="label-small font-gray">DOWNLOAD</label>
+            </div>
+            <p>Three-across vertical grid</p>
+            <!-- THREE-ACROSS VERTICAL GRID -->
+            <div class="card-grid">
+                <div class="card-grid-three">
+                    <div class="card-grid-vert">
+                        <img class="icon" title="Download" src="icons/down-arrow.svg">
+                        <div class="flex-grid" style="padding-top: 0.5rem;">
+                            <label class="label-medium" style="padding-right: 3px;" title="Data download total in MB">158</label>
+                            <label class="label-small font-near-black">MB</label>
+                        </div>
+                        <label class="label-small font-gray">DOWNLOAD</label>
+                    </div>
+                    <div class="card-grid-vert">
+                        <img class="icon" title="Upload" src="icons/up-arrow.svg">
+                        <div class="flex-grid" style="padding-top: 0.5rem;">
+                            <label class="label-medium" style="padding-right: 3px;" title="Data upload total in GB">16</label>
+                            <label class="label-small font-near-black">GB</label>
+                        </div>
+                        <label class="label-small font-gray">UPLOAD</label>
+                    </div>
+                    <div class="card-grid-vert">
+                        <img class="icon" title="Connected devices" src="icons/devices.svg">
+                        <div class="flex-grid" style="padding-top: 0.5rem;">
+                            <label class="label-medium" style="padding-right: 3px;" title="Number of connected devices">3</label>
+                        </div>
+                        <label class="label-small font-gray">DEVICES</label>
+                    </div>
+                </div>
             <hr style="width: 100%;">
             <h3>Lists</h3>
             <!-- LISTS -->
@@ -177,23 +239,23 @@
                 <ul class="list">
                     <li class="list-item">
                         <p class="list-text">Cottage</p>
-                        <label class="label-small" title="Status">Connected</label>
+                        <label class="label-small font-gray" title="Status">Connected</label>
                     </li>
                     <li class="list-item">
                         <p class="list-text">Home</p>
-                        <label class="label-small" title="Status"></label>
+                        <label class="label-small font-gray" title="Status"></label>
                     </li>
                     <li class="list-item">
                         <p class="list-text">RadNet23432</p>
-                        <label class="label-small" title="Status">Not in range</label>
+                        <label class="label-small font-gray" title="Status">Not in range</label>
                     </li>
                     <li class="list-item">
                         <p class="list-text">TPLink-2374</p>
-                        <label class="label-small" title="Status">Not in range</label>
+                        <label class="label-small font-gray" title="Status">Not in range</label>
                     </li>
                     <li class="list-item">
                         <p class="list-text">DASHAUS</p>
-                        <label class="label-small" title="Status">Not in range</label>
+                        <label class="label-small font-gray" title="Status">Not in range</label>
                     </li>
                 </ul>
             </div>
@@ -205,12 +267,12 @@
                     <li class="list-item">
                         <img class="icon icon-active icon-medium list-icon" src="icons/wifi.svg">
                         <p class="list-text">Cottage</p>
-                        <label class="label-small list-label" title="Status">Connected</label>
+                        <label class="label-small list-label font-gray" title="Status">Connected</label>
                     </li>
                     <li class="list-item">
                         <img class="icon icon-inactive icon-medium list-icon" src="icons/wifi.svg">
                         <p class="list-text">Home</p>
-                        <label class="label-small list-label" title="Status">Not in range</label>
+                        <label class="label-small list-label font-gray" title="Status">Not in range</label>
                     </li>
                 </ul>
             </div>
@@ -233,34 +295,6 @@
                 <img class="nav-icon nav-icon-right icon-active" src="icons/question-circle.svg" title="Help">
             </div>
             <hr style="width: 100%;">
-            <h3>Network Data Molecule</h3>
-            <!-- NETWORK DATA MOLECULES -->
-            <p>Icon with data value and unit label</p>
-            <!-- icon + label -->
-            <div class="card-grid">
-                <!-- row of icons representing network statistics -->
-                <div class="card-grid-vert">
-                    <img class="icon" title="Download" src="icons/down-arrow.svg">
-                    <div class="flex-grid" style="padding-top: 1rem;">
-                        <label class="label-medium" style="padding-right: 3px;" title="Data download total in MB">21.7</label>
-                        <label class="label-small" style="color: var(--near-black);">MB</label>
-                    </div>
-                </div>
-            </div>
-            <p>Icon with data value, unit label and description</p>
-            <!-- icon + label -->
-            <div class="card-grid">
-                <!-- row of icons representing network statistics -->
-                <div class="card-grid-vert">
-                    <img class="icon" title="Download" src="icons/down-arrow.svg">
-                    <div class="flex-grid" style="padding-top: 1rem;">
-                        <label class="label-medium" style="padding-right: 3px;" title="Data download total in MB">21.7</label>
-                        <label class="label-small" style="color: var(--near-black);">MB</label>
-                    </div>
-                    <label class="label-small">DOWNLOAD</label>
-                </div>
-            </div>
-            <hr style="width: 100%;">
             <h3>Network Card</h3>
             <!-- NETWORK CARD -->
             <!-- NETWORK INFO BOX -->
@@ -271,15 +305,15 @@
                     <!-- left column -->
                     <div class="grid-column-1">
                         <img class="center icon" src="icons/router.svg">
-                        <label class="center label-small" title="Access Point Status">ONLINE</label>
+                        <label class="center label-small font-gray" title="Access Point Status">ONLINE</label>
                     </div>
                     <!-- right column -->
                     <div class="grid-column-2">
-                        <label class="label-small" title="Network Mode">MODE</label>
+                        <label class="label-small font-gray" title="Network Mode">MODE</label>
                         <p class="card-text" title="Network Mode">Access Point</p>
-                        <label class="label-small" title="Access Point SSID">SSID</label>
+                        <label class="label-small font-gray" title="Access Point SSID">SSID</label>
                         <p class="card-text" title="SSID">peach</p>
-                        <label class="label-small" title="Access Point IP Address">IP</label>
+                        <label class="label-small font-gray" title="Access Point IP Address">IP</label>
                         <p class="card-text" title="IP">11.11.11.10</p>
                     </div>
                 </div>
@@ -287,23 +321,30 @@
                 <button class="button center">Add WiFi Network</button>
                 <!-- CARD GRID -->
                 <div class="card-grid">
-                    <!-- row of icons representing network statistics -->
                     <div class="card-grid-three">
-                        <img class="grid-three-icon-1 icon" title="Devices" src="icons/devices.svg">
-                        <img class="grid-three-icon-2 icon" title="Download" src="icons/down-arrow.svg">
-                        <img class="grid-three-icon-3 icon" title="Upload" src="icons/up-arrow.svg">
-                    </div>
-                    <!-- row of values representing current network state -->
-                    <div class="card-grid-three">
-                        <label class="grid-three-label-1 label-medium" title="Number of connected devices">6</label>
-                        <label class="grid-three-label-2 label-medium" title="Data download total in MB">21.7</label>
-                        <label class="grid-three-label-3 label-medium" title="Data upload total in MB">3.4</label>
-                    </div>
-                    <!-- row of labels for each network statistic column -->
-                    <div class="card-grid-three">
-                        <label class="grid-three-label-1 label-small">DEVICES</label>
-                        <label class="grid-three-label-2 label-small">DOWNLOAD</label>
-                        <label class="grid-three-label-3 label-small">UPLOAD</label>
+                        <div class="card-grid-vert">
+                            <img class="icon icon-medium" title="Connected devices" src="icons/devices.svg">
+                            <div class="flex-grid" style="padding-top: 1rem;">
+                                <label class="label-medium" style="padding-right: 3px;" title="Number of connected devices">3</label>
+                            </div>
+                            <label class="label-small font-gray">DEVICES</label>
+                        </div>
+                        <div class="card-grid-vert">
+                            <img class="icon icon-medium" title="Download" src="icons/down-arrow.svg">
+                            <div class="flex-grid" style="padding-top: 1rem;">
+                                <label class="label-medium" style="padding-right: 3px;" title="Data download total in MB">158</label>
+                                <label class="label-small font-near-black">MB</label>
+                            </div>
+                            <label class="label-small font-gray">DOWNLOAD</label>
+                        </div>
+                        <div class="card-grid-vert">
+                            <img class="icon icon-medium" title="Upload" src="icons/up-arrow.svg">
+                            <div class="flex-grid" style="padding-top: 1rem;">
+                                <label class="label-medium" style="padding-right: 3px;" title="Data upload total in GB">16</label>
+                                <label class="label-small font-near-black">GB</label>
+                            </div>
+                            <label class="label-small font-gray">UPLOAD</label>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -326,15 +367,15 @@
                         <!-- left column -->
                         <div class="grid-column-1">
                             <img class="center icon" src="icons/router.svg">
-                            <label class="center label-small" title="Access Point Status">ONLINE</label>
+                            <label class="center label-small font-gray" title="Access Point Status">ONLINE</label>
                         </div>
                         <!-- right column -->
                         <div class="grid-column-2">
-                            <label class="label-small" title="Network Mode">MODE</label>
+                            <label class="label-small font-gray" title="Network Mode">MODE</label>
                             <p class="card-text" title="Network Mode">Access Point</p>
-                            <label class="label-small" title="Access Point SSID">SSID</label>
+                            <label class="label-small font-gray" title="Access Point SSID">SSID</label>
                             <p class="card-text" title="SSID">peach</p>
-                            <label class="label-small" title="Access Point IP Address">IP</label>
+                            <label class="label-small font-gray" title="Access Point IP Address">IP</label>
                             <p class="card-text" title="IP">11.11.11.10</p>
                         </div>
                     </div>
@@ -388,20 +429,20 @@
                             <li class="list-item">
                                 <img class="icon icon-active icon-medium list-icon" src="icons/wifi.svg">
                                 <p class="list-text">Cottage</p>
-                                <label class="label-small list-label" title="Status">Connected</label>
+                                <label class="label-small list-label font-gray" title="Status">Connected</label>
                             </li>
                             <li class="list-item">
                                 <img class="icon icon-inactive icon-medium list-icon" src="icons/wifi.svg">
                                 <p class="list-text">TranquilGarden</p>
-                                <label class="label-small list-label" title="Status">Available</label>
+                                <label class="label-small list-label font-gray" title="Status">Available</label>
                             </li>
                             <li class="list-item">
                                 <p class="list-text">Deli @TheVillage</p>
-                                <label class="label-small list-label" title="Status">Not in range</label>
+                                <label class="label-small list-label font-gray" title="Status">Not in range</label>
                             </li>
                             <li class="list-item">
                                 <p class="list-text">H ⅄ P H Λ L</p>
-                                <label class="label-small list-label" title="Status">Not in range</label>
+                                <label class="label-small list-label font-gray" title="Status">Not in range</label>
                             </li>
                         </ul>
                     </div>
@@ -437,16 +478,16 @@
                         <!-- icon with label molecule -->
                         <!-- left column -->
                         <div class="grid-column-1">
-                            <img class="center icon" src="icons/wifi.svg">
-                            <label class="center label-small" title="Access Point Status">AVAILABLE</label>
+                            <img class="center icon icon-active" src="icons/wifi.svg">
+                            <label class="center label-small font-gray" title="Access Point Status">AVAILABLE</label>
                         </div>
                         <!-- right column -->
                         <div class="grid-column-2">
-                            <label class="label-small" title="Access Point SSID">SSID</label>
+                            <label class="label-small font-gray" title="Access Point SSID">SSID</label>
                             <p class="card-text" title="SSID">TranquilGarden</p>
-                            <label class="label-small" title="Access Point key management protocol">SECURITY</label>
+                            <label class="label-small font-gray" title="Access Point key management protocol">SECURITY</label>
                             <p class="card-text" title="Key management protocol of WiFi access point">WPA2-PSK</p>
-                            <label class="label-small" title="Signal Strength">SIGNAL</label>
+                            <label class="label-small font-gray" title="Signal Strength">SIGNAL</label>
                             <p class="card-text" title="Signal strength of WiFi access point">73%</p>
                         </div>
                     </div>
