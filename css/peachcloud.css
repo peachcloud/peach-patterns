@@ -127,7 +127,7 @@ body {
 .card-text {
     margin: 0;
     font-size: var(--font-size-5);
-    padding-bottom: 3px;
+    padding-bottom: 0.3rem;
     padding-right: 1rem;
 }
 
@@ -377,8 +377,11 @@ body {
 }
 
 .input {
-    margin-top: 5px;
+    margin-top: 1rem;
     margin-bottom: 1rem;
+    padding-left: 5px;
+    line-height: 1.5rem;
+    width: 90%;
 }
 
 /*
