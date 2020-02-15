@@ -97,7 +97,7 @@
             <!-- INPUTS -->
             <p>Standard input with button</p>
             <!-- Standard input with button -->
-            <div class="form">
+            <div class="card-container">
                 <input class="input" type="password" placeholder="Password" title="Password for access point"></input>
                 <button class="button">Connect</button>
             </div>
@@ -123,21 +123,21 @@
             <h3>Grids</h3>
             <p>Three-across icon grid</p>
             <!-- THREE-ACROSS ICON GRID -->
-            <div class="card-grid-three">
-                <img class="grid-three-icon-1 icon" title="Devices" src="icons/devices.svg">
-                <img class="grid-three-icon-2 icon" title="Download" src="icons/down-arrow.svg">
-                <img class="grid-three-icon-3 icon" title="Upload" src="icons/up-arrow.svg">
+            <div class="three-grid">
+                <img class="three-grid-icon-1 icon" title="Devices" src="icons/devices.svg">
+                <img class="three-grid-icon-2 icon" title="Download" src="icons/down-arrow.svg">
+                <img class="three-grid-icon-3 icon" title="Upload" src="icons/up-arrow.svg">
             </div>
             <p>Three-across label grid</p>
             <!-- THREE-ACROSS LABEL GRID -->
-            <div class="card-grid-three">
-                <label class="grid-three-label-1 label-medium">Label 1</label>
-                <label class="grid-three-label-2 label-medium">Label 2</label>
-                <label class="grid-three-label-3 label-medium">Label 3</label>
+            <div class="three-grid">
+                <label class="three-grid-label-1 label-medium">Label 1</label>
+                <label class="three-grid-label-2 label-medium">Label 2</label>
+                <label class="three-grid-label-3 label-medium">Label 3</label>
             </div>
             <p>Three-across switch and icons grid</p>
             <!-- THREE-ACROSS SWITCH AND ICONS GRID -->
-            <div class="card-grid-three">
+            <div class="three-grid">
                 <!-- LEFT SWITCH ICON -->
                 <img class="icon-inactive switch-icon-left" style="width: 50%" src="icons/wifi.svg">
                 <!-- ROUNDED SWITCH -->
@@ -150,24 +150,24 @@
                 <!-- RIGHT SWITCH ICON -->
                 <img class="icon-active switch-icon-right" style="width: 50%" src="icons/router.svg">
             </div>
-            <p>Vertical grid with icon and value</p>
-            <!-- VERTICAL GRID WITH ICON AND VALUE -->
-            <div class="card-grid-vert">
+            <p>Stack with icon and value</p>
+            <!-- STACK WITH ICON AND VALUE -->
+            <div class="stack">
                 <img class="icon" title="Download" src="icons/devices.svg">
                 <label class="label-medium" title="Number of connected devices" style="padding-top: 0.5rem;">4</label>
             </div>
-            <p>Vertical grid with icon, value and unit</p>
-            <!-- VERTICAL GRID WITH ICON, VALUE AND UNIT -->
-            <div class="card-grid-vert">
+            <p>Stack with icon, value and unit</p>
+            <!-- STACK WITH ICON, VALUE AND UNIT -->
+            <div class="stack">
                 <img class="icon" title="Download" src="icons/down-arrow.svg">
                 <div class="flex-grid" style="padding-top: 0.5rem;">
                     <label class="label-medium" style="padding-right: 3px;" title="Data download total in MB">21.7</label>
                     <label class="label-small font-near-black">GB</label>
                 </div>
             </div>
-            <p>Vertical grid with icon, value, unit and label</p>
-            <!-- VERTICAL GRID WITH ICON, VALUE, UNIT AND LABEL -->
-            <div class="card-grid-vert">
+            <p>Stack with icon, value, unit and label</p>
+            <!-- STACK WITH ICON, VALUE, UNIT AND LABEL -->
+            <div class="stack">
                 <img class="icon" title="Download" src="icons/down-arrow.svg">
                 <div class="flex-grid" style="padding-top: 0.5rem;">
                     <label class="label-medium" style="padding-right: 3px;" title="Data download total in MB">158</label>
@@ -175,11 +175,11 @@
                 </div>
                 <label class="label-small font-gray">DOWNLOAD</label>
             </div>
-            <p>Three-across vertical grid</p>
-            <!-- THREE-ACROSS VERTICAL GRID -->
-            <div class="card-grid">
-                <div class="card-grid-three">
-                    <div class="card-grid-vert">
+            <p>Three-across stack</p>
+            <!-- THREE-ACROSS STACK -->
+            <div class="card-container">
+                <div class="three-grid">
+                    <div class="stack">
                         <img class="icon" title="Download" src="icons/down-arrow.svg">
                         <div class="flex-grid" style="padding-top: 0.5rem;">
                             <label class="label-medium" style="padding-right: 3px;" title="Data download total in MB">158</label>
@@ -187,7 +187,7 @@
                         </div>
                         <label class="label-small font-gray">DOWNLOAD</label>
                     </div>
-                    <div class="card-grid-vert">
+                    <div class="stack">
                         <img class="icon" title="Upload" src="icons/up-arrow.svg">
                         <div class="flex-grid" style="padding-top: 0.5rem;">
                             <label class="label-medium" style="padding-right: 3px;" title="Data upload total in GB">16</label>
@@ -195,7 +195,7 @@
                         </div>
                         <label class="label-small font-gray">UPLOAD</label>
                     </div>
-                    <div class="card-grid-vert">
+                    <div class="stack">
                         <img class="icon" title="Connected devices" src="icons/devices.svg">
                         <div class="flex-grid" style="padding-top: 0.5rem;">
                             <label class="label-medium" style="padding-right: 3px;" title="Number of connected devices">3</label>
@@ -282,24 +282,36 @@
             <!-- NAV BARS -->
             <p>Top nav bar</p>
             <!-- Top nav bar -->
-            <div class="nav-bar">
-                <img class="nav-icon nav-icon-left" src="icons/peach-icon.png" title="Home">
-                <img class="nav-icon nav-icon-left icon-active" src="icons/back.svg" title="Back">
-                <img class="nav-icon nav-icon-right icon-active" src="icons/exit.svg" title="Logout">
-                <img class="nav-icon nav-icon-right icon-active" src="icons/power-switch.svg" title="Shutdown">
-            </div>
+            <nav class="nav-bar">
+                <a class="nav-item" href="/">
+                    <img class="icon nav-icon-left" src="icons/peach-icon.png" alt="PeachCloud logo consisting of a peach with green leaves on the left and two overlapping clouds to the right" title="Home">
+                </a>
+                <a class="nav-item" href="" title="Back">
+                    <img class="icon-medium nav-icon-left icon-active" src="icons/back.svg" alt="Greater-than symbol or backward-facing arrow">
+                </a>
+                <a class="nav-item push-right" href="/logout" title="Logout">
+                    <img class="icon-medium nav-icon-right icon-active" src="icons/exit.svg" alt="Exit icon: an arrow pointing out from an open door">
+                </a>
+                <a class="nav-item" href="/shutdown" title="Shutdown">
+                    <img class="icon-medium nav-icon-right icon-active" src="icons/power-switch.svg" alt="Power-switch icon">
+                </a>
+            </nav>
             <p>Bottom nav bar</p>
             <!-- Bottom nav bar -->
-            <div class="nav-bar">
-                <img class="nav-icon nav-icon-left" src="icons/hermies.png" title="Scuttlebutt">
-                <img class="nav-icon nav-icon-right icon-active" src="icons/question-circle.svg" title="Help">
-            </div>
+            <nav class="nav-bar">
+                <a class="nav-item" href="https://scuttlebutt.nz/">
+                    <img class="icon-medium nav-icon-left" title="Scuttlebutt Website" src="icons/hermies.png" alt="Logo for Secure Scuttlebutt: Hermies the Hermit Crab contained within a hexagon">
+                </a>
+                <a class="nav-item push-right" href="/help">
+                    <img class="icon-medium nav-icon-right icon-active" title="Help" src="icons/question-circle.svg" alt="Question symbol inside of a circle">
+                </a>
+            </nav>
             <hr style="width: 100%;">
             <h3>Network Card</h3>
             <!-- NETWORK CARD -->
             <!-- NETWORK INFO BOX -->
             <div class="card">
-                <div class="card-grid-two" title="PeachCloud network mode and status">
+                <div class="two-grid" title="PeachCloud network mode and status">
                     <!-- NETWORK STATUS ICON -->
                     <!-- icon with label molecule -->
                     <!-- left column -->
@@ -320,16 +332,16 @@
                 <button class="button center">Enable WiFi</button>
                 <button class="button center">Add WiFi Network</button>
                 <!-- CARD GRID -->
-                <div class="card-grid">
-                    <div class="card-grid-three">
-                        <div class="card-grid-vert">
+                <div class="card-container">
+                    <div class="three-grid">
+                        <div class="stack">
                             <img class="icon icon-medium" title="Connected devices" src="icons/devices.svg">
                             <div class="flex-grid" style="padding-top: 1rem;">
                                 <label class="label-medium" style="padding-right: 3px;" title="Number of connected devices">3</label>
                             </div>
                             <label class="label-small font-gray">DEVICES</label>
                         </div>
-                        <div class="card-grid-vert">
+                        <div class="stack">
                             <img class="icon icon-medium" title="Download" src="icons/down-arrow.svg">
                             <div class="flex-grid" style="padding-top: 1rem;">
                                 <label class="label-medium" style="padding-right: 3px;" title="Data download total in MB">158</label>
@@ -337,7 +349,7 @@
                             </div>
                             <label class="label-small font-gray">DOWNLOAD</label>
                         </div>
-                        <div class="card-grid-vert">
+                        <div class="stack">
                             <img class="icon icon-medium" title="Upload" src="icons/up-arrow.svg">
                             <div class="flex-grid" style="padding-top: 1rem;">
                                 <label class="label-medium" style="padding-right: 3px;" title="Data upload total in GB">16</label>
@@ -352,16 +364,24 @@
             <h3>Network Card with Nav Bars</h3>
             <div style="background-color: var(--moon-gray);"> 
                 <!-- Top nav bar -->
-                <div class="nav-bar">
-                    <img class="nav-icon nav-icon-left" src="icons/peach-icon.png" title="Home">
-                    <img class="nav-icon nav-icon-left icon-active" src="icons/back.svg" title="Back">
-                    <img class="nav-icon nav-icon-right icon-active" src="icons/exit.svg" title="Logout">
-                    <img class="nav-icon nav-icon-right icon-active" src="icons/power-switch.svg" title="Shutdown">
-                </div>
+                <nav class="nav-bar">
+                    <a class="nav-item" href="/">
+                        <img class="icon nav-icon-left" src="icons/peach-icon.png" alt="PeachCloud logo consisting of a peach with green leaves on the left and two overlapping clouds to the right" title="Home">
+                    </a>
+                    <a class="nav-item" href="" title="Back">
+                        <img class="icon-medium nav-icon-left icon-active" src="icons/back.svg" alt="Greater-than symbol or backward-facing arrow">
+                    </a>
+                    <a class="nav-item push-right" href="/logout" title="Logout">
+                        <img class="icon-medium nav-icon-right icon-active" src="icons/exit.svg" alt="Exit icon: an arrow pointing out from an open door">
+                    </a>
+                    <a class="nav-item" href="/shutdown" title="Shutdown">
+                        <img class="icon-medium nav-icon-right icon-active" src="icons/power-switch.svg" alt="Power-switch icon">
+                    </a>
+                </nav>
                 <!-- NETWORK CARD -->
                 <div class="card center">
                     <!-- NETWORK INFO BOX -->
-                    <div class="card-grid-two" title="PeachCloud network mode and status">
+                    <div class="two-grid" title="PeachCloud network mode and status">
                         <!-- NETWORK STATUS ICON -->
                         <!-- icon with label molecule -->
                         <!-- left column -->
@@ -382,44 +402,56 @@
                     <button class="button center">Enable WiFi</button>
                     <button class="button center">Add WiFi Network</button>
                     <!-- CARD GRID -->
-                    <div class="card-grid">
+                    <div class="card-container">
                         <!-- row of icons representing network statistics -->
-                        <div class="card-grid-three">
-                            <img class="grid-three-icon-1 icon" title="Devices" src="icons/devices.svg">
-                            <img class="grid-three-icon-2 icon" title="Download" src="icons/down-arrow.svg">
-                            <img class="grid-three-icon-3 icon" title="Upload" src="icons/up-arrow.svg">
+                        <div class="three-grid">
+                            <img class="three-grid-icon-1 icon" title="Devices" src="icons/devices.svg">
+                            <img class="three-grid-icon-2 icon" title="Download" src="icons/down-arrow.svg">
+                            <img class="three-grid-icon-3 icon" title="Upload" src="icons/up-arrow.svg">
                         </div>
                         <!-- row of values representing current network state -->
-                        <div class="card-grid-three">
-                            <label class="grid-three-label-1 label-medium" title="Number of connected devices">6</label>
-                            <label class="grid-three-label-2 label-medium" title="Data download total in MB">21.7</label>
-                            <label class="grid-three-label-3 label-medium" title="Data upload total in MB">3.4</label>
+                        <div class="three-grid">
+                            <label class="three-grid-label-1 label-medium" title="Number of connected devices">6</label>
+                            <label class="three-grid-label-2 label-medium" title="Data download total in MB">21.7</label>
+                            <label class="three-grid-label-3 label-medium" title="Data upload total in MB">3.4</label>
                         </div>
                         <!-- row of labels for each network statistic column -->
-                        <div class="card-grid-three">
-                            <label class="grid-three-label-1 label-small">DEVICES</label>
-                            <label class="grid-three-label-2 label-small">DOWNLOAD</label>
-                            <label class="grid-three-label-3 label-small">UPLOAD</label>
+                        <div class="three-grid">
+                            <label class="three-grid-label-1 label-small">DEVICES</label>
+                            <label class="three-grid-label-2 label-small">DOWNLOAD</label>
+                            <label class="three-grid-label-3 label-small">UPLOAD</label>
                         </div>
                     </div>
                 </div>
                 <!-- Bottom nav bar -->
-                <div class="nav-bar">
-                    <img class="nav-icon nav-icon-left" src="icons/hermies.png" title="Scuttlebutt">
-                    <img class="nav-icon nav-icon-right icon-active" src="icons/question-circle.svg" title="Help">
-                </div>
+                <nav class="nav-bar">
+                    <a class="nav-item" href="https://scuttlebutt.nz/">
+                        <img class="icon-medium nav-icon-left" title="Scuttlebutt Website" src="icons/hermies.png" alt="Logo for Secure Scuttlebutt: Hermies the Hermit Crab contained within a hexagon">
+                    </a>
+                    <a class="nav-item push-right" href="/help">
+                        <img class="icon-medium nav-icon-right icon-active" title="Help" src="icons/question-circle.svg" alt="Question symbol inside of a circle">
+                    </a>
+                </nav>
             </div>
             <hr style="width: 100%;">
             <h3>Network List with Nav Bars</h3>
             <!-- Network list with nav bars -->
             <div style="background-color: var(--moon-gray);"> 
                 <!-- Top nav bar -->
-                <div class="nav-bar">
-                    <img class="nav-icon nav-icon-left" src="icons/peach-icon.png">
-                    <img class="nav-icon nav-icon-left icon-active" src="icons/back.svg">
-                    <img class="nav-icon nav-icon-right icon-active" src="icons/exit.svg">
-                    <img class="nav-icon nav-icon-right icon-active" src="icons/power-switch.svg">
-                </div>
+                <nav class="nav-bar">
+                    <a class="nav-item" href="/">
+                        <img class="icon nav-icon-left" src="icons/peach-icon.png" alt="PeachCloud logo consisting of a peach with green leaves on the left and two overlapping clouds to the right" title="Home">
+                    </a>
+                    <a class="nav-item" href="" title="Back">
+                        <img class="icon-medium nav-icon-left icon-active" src="icons/back.svg" alt="Greater-than symbol or backward-facing arrow">
+                    </a>
+                    <a class="nav-item push-right" href="/logout" title="Logout">
+                        <img class="icon-medium nav-icon-right icon-active" src="icons/exit.svg" alt="Exit icon: an arrow pointing out from an open door">
+                    </a>
+                    <a class="nav-item" href="/shutdown" title="Shutdown">
+                        <img class="icon-medium nav-icon-right icon-active" src="icons/power-switch.svg" alt="Power-switch icon">
+                    </a>
+                </nav>
                 <!-- NETWORK CARD -->
                 <!-- NETWORK INFO BOX -->
                 <div class="card center">
@@ -448,22 +480,34 @@
                     </div>
                 </div>
                 <!-- Bottom nav bar -->
-                <div class="nav-bar">
-                    <img class="nav-icon nav-icon-left" src="icons/hermies.png">
-                    <img class="nav-icon nav-icon-right icon-active" src="icons/question-circle.svg">
-                </div>
+                <nav class="nav-bar">
+                    <a class="nav-item" href="https://scuttlebutt.nz/">
+                        <img class="icon-medium nav-icon-left" title="Scuttlebutt Website" src="icons/hermies.png" alt="Logo for Secure Scuttlebutt: Hermies the Hermit Crab contained within a hexagon">
+                    </a>
+                    <a class="nav-item push-right" href="/help">
+                        <img class="icon-medium nav-icon-right icon-active" title="Help" src="icons/question-circle.svg" alt="Question symbol inside of a circle">
+                    </a>
+                </nav>
             </div>
             <hr style="width: 100%;">
             <h3>Network Details with Nav Bars</h3>
             <!-- Network details with nav bars -->
             <div style="background-color: var(--moon-gray);"> 
                 <!-- Top nav bar -->
-                <div class="nav-bar">
-                    <img class="nav-icon nav-icon-left" src="icons/peach-icon.png">
-                    <img class="nav-icon nav-icon-left icon-active" src="icons/back.svg">
-                    <img class="nav-icon nav-icon-right icon-active" src="icons/exit.svg">
-                    <img class="nav-icon nav-icon-right icon-active" src="icons/power-switch.svg">
-                </div>
+                <nav class="nav-bar">
+                    <a class="nav-item" href="/">
+                        <img class="icon nav-icon-left" src="icons/peach-icon.png" alt="PeachCloud logo consisting of a peach with green leaves on the left and two overlapping clouds to the right" title="Home">
+                    </a>
+                    <a class="nav-item" href="" title="Back">
+                        <img class="icon-medium nav-icon-left icon-active" src="icons/back.svg" alt="Greater-than symbol or backward-facing arrow">
+                    </a>
+                    <a class="nav-item push-right" href="/logout" title="Logout">
+                        <img class="icon-medium nav-icon-right icon-active" src="icons/exit.svg" alt="Exit icon: an arrow pointing out from an open door">
+                    </a>
+                    <a class="nav-item" href="/shutdown" title="Shutdown">
+                        <img class="icon-medium nav-icon-right icon-active" src="icons/power-switch.svg" alt="Power-switch icon">
+                    </a>
+                </nav>
                 <!-- NETWORK CARD -->
                 <!-- NETWORK INFO BOX -->
                 <div class="card center">
@@ -473,7 +517,7 @@
                     <!-- input for password -->
                     <!-- connect button -->
                     <!-- cancel button -->
-                    <div class="card-grid-two" title="PeachCloud network mode and status">
+                    <div class="two-grid" title="PeachCloud network mode and status">
                         <!-- NETWORK STATUS ICON -->
                         <!-- icon with label molecule -->
                         <!-- left column -->
@@ -492,48 +536,64 @@
                         </div>
                     </div>
                     <!-- Standard input with button -->
-                    <div class="form">
+                    <div class="card-container" style="padding-top: 0;">
                         <button class="center button">Connect</button>
                         <button class="center button">Modify</button>
                         <button class="center button">Forget</button>
                     </div>
                 </div>
                 <!-- Bottom nav bar -->
-                <div class="nav-bar">
-                    <img class="nav-icon nav-icon-left" src="icons/hermies.png">
-                    <img class="nav-icon nav-icon-right icon-active" src="icons/question-circle.svg">
-                </div>
+                <nav class="nav-bar">
+                    <a class="nav-item" href="https://scuttlebutt.nz/">
+                        <img class="icon-medium nav-icon-left" title="Scuttlebutt Website" src="icons/hermies.png" alt="Logo for Secure Scuttlebutt: Hermies the Hermit Crab contained within a hexagon">
+                    </a>
+                    <a class="nav-item push-right" href="/help">
+                        <img class="icon-medium nav-icon-right icon-active" title="Help" src="icons/question-circle.svg" alt="Question symbol inside of a circle">
+                    </a>
+                </nav>
             </div>
             <hr style="width: 100%;">
             <h3>Network Add Credentials with Nav Bars</h3>
             <!-- Network add credentials with nav bars -->
             <div style="background-color: var(--moon-gray);"> 
                 <!-- Top nav bar -->
-                <div class="nav-bar">
-                    <img class="nav-icon nav-icon-left" src="icons/peach-icon.png">
-                    <img class="nav-icon nav-icon-left icon-active" src="icons/back.svg">
-                    <img class="nav-icon nav-icon-right icon-active" src="icons/exit.svg">
-                    <img class="nav-icon nav-icon-right icon-active" src="icons/power-switch.svg">
-                </div>
+                <nav class="nav-bar">
+                    <a class="nav-item" href="/">
+                        <img class="icon nav-icon-left" src="icons/peach-icon.png" alt="PeachCloud logo consisting of a peach with green leaves on the left and two overlapping clouds to the right" title="Home">
+                    </a>
+                    <a class="nav-item" href="" title="Back">
+                        <img class="icon-medium nav-icon-left icon-active" src="icons/back.svg" alt="Greater-than symbol or backward-facing arrow">
+                    </a>
+                    <a class="nav-item push-right" href="/logout" title="Logout">
+                        <img class="icon-medium nav-icon-right icon-active" src="icons/exit.svg" alt="Exit icon: an arrow pointing out from an open door">
+                    </a>
+                    <a class="nav-item" href="/shutdown" title="Shutdown">
+                        <img class="icon-medium nav-icon-right icon-active" src="icons/power-switch.svg" alt="Power-switch icon">
+                    </a>
+                </nav>
                 <!-- NETWORK CARD -->
                 <!-- NETWORK ADD CREDENTIALS FORM -->
                 <div class="card center">
                     <!-- Standard input with button -->
-                    <div class="form">
+                    <div class="card-container">
                         <h1 class="bold center-text title-medium">Add WiFi Network</h1>
                         <input class="center input" type="text" placeholder="SSID" title="Network name (SSID) for WiFi access point"></input>
                         <input class="center input" type="password" placeholder="Password" title="Password for WiFi access point"></input>
                         <button class="center button">Connect</button>
                         <button class="center button">Cancel</button>
+                        <!-- NOTE : used to share ux information with the user -->
                         <p class="label-small font-gray" style="padding-left: 5px;">This website will be unresponsive while the access point is disabled and the WiFi connection attempt is made.</p>
                     </div>
-                    <!-- NOTE : used to share ux information with the user -->
                 </div>
                 <!-- Bottom nav bar -->
-                <div class="nav-bar">
-                    <img class="nav-icon nav-icon-left" src="icons/hermies.png">
-                    <img class="nav-icon nav-icon-right icon-active" src="icons/question-circle.svg">
-                </div>
+                <nav class="nav-bar">
+                    <a class="nav-item" href="https://scuttlebutt.nz/">
+                        <img class="icon-medium nav-icon-left" title="Scuttlebutt Website" src="icons/hermies.png" alt="Logo for Secure Scuttlebutt: Hermies the Hermit Crab contained within a hexagon">
+                    </a>
+                    <a class="nav-item push-right" href="/help">
+                        <img class="icon-medium nav-icon-right icon-active" title="Help" src="icons/question-circle.svg" alt="Question symbol inside of a circle">
+                    </a>
+                </nav>
             </div>
             <hr style="width: 100%;">
             <h3>Radial Menu</h3>
