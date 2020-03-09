@@ -406,7 +406,7 @@ html {
 }
 
 .font-gray {
-    color: var(--gray);
+    color: var(--mid-gray);
 }
 
 .font-light-gray {
@@ -468,7 +468,7 @@ html {
     margin-bottom: 1rem;
     padding-left: 5px;
     line-height: 1.5rem;
-    width: 90%;
+    width: 70%;
 }
 
 /*
