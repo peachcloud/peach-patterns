@@ -741,3 +741,64 @@ input {
     padding: 0;
     margin: 0;
 }
+
+/*
+ * METERS
+ */
+
+meter {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    display: block;
+    /* height: 1rem; */
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    width: 100%;
+    /* remove default styling */
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+
+    /* Firefox */
+    background: none; /* remove default background */
+    background-color: var(--near-white);
+    box-shadow: 0 5px 5px -5px #333 inset;
+}
+
+meter::-webkit-meter-bar {
+    background: none; /* remove default background */
+    background-color: var(--near-white);
+    box-shadow: 0 5px 5px -5px #333 inset;
+}
+
+meter::-webkit-meter-optimum-value {
+    background-size: 100% 100%;
+    box-shadow: 0 5px 5px -5px #999 inset;
+    transition: width .5s;
+}
+
+/* Firefox styling */
+meter::-moz-meter-bar {
+    /* background: linear-gradient(90deg, var(--green), var(--red)); */
+    background: var(--blue);
+    background-size: 100% 100%;
+    box-shadow: 0 5px 5px -5px #999 inset;
+}
+
+.meter-gauge {
+    background-color: var(--near-white);
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 5px 5px -5px #333 inset;
+    display: block;
+}
+
+/* Chrome styling */
+.meter-gauge > span {
+    background: var(--blue);
+    background-size: 100% 100%;
+    box-shadow: 0 5px 5px -5px #999 inset;
+    display: block;
+    height: inherit;
+    text-indent: -9999px;
+}
