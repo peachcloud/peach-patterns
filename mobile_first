@@ -50,7 +50,7 @@ html {
 
 /* ADD THIS */
 input {
-    width: 100%;
+    width: 80%;
 }
 -----
 
@@ -66,3 +66,17 @@ look at the .input attributes
 
 network_detail
  - sometimes the background colour is white on my phone
+
+-----
+
+breakpoints:
+
+600px, 900px, 1200px, 1800px
+
+"if you are designing your layout with a mobile-first approach, then use min-width breakpoints and work your way up"
+
+```
+@media only screen (min-width: 600px) { 
+    ...
+}
+```

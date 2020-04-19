@@ -20,6 +20,7 @@
  * - LINKS
  * - LISTS
  * - MAIN
+ * - METERS
  * - NAVIGATION
  * - RADIAL MENU
  * - SWITCHES / SLIDERS
@@ -74,6 +75,10 @@ body {
 .button {
     background-color: var(--moon-gray);
     border: 1px solid var(--near-black);
+    /* Needed to render inputs & buttons of equal width */
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     color: var(--near-black);
     cursor: pointer;
     padding: 10px;
@@ -99,15 +104,17 @@ body {
     /* background-color: var(--near-white); */
     /* border-radius: var(--border-radius-4); */
     /* min-height: var(--height-5); */
+    min-height: 50vh;
     max-height: 90vh;
     /* width: 90%; */
+    width: var(--max-width-5);
     position: relative;
     /* box-shadow: var(--box-shadow-3); */
     /* margin-top: 1rem; */
     /* margin-bottom: 1rem; */
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
     .card {
         min-height: 50vh;
         max-height: 90vh;
@@ -378,8 +385,11 @@ body {
  * HTML
  */
 
-html {
-    /* height: 100%; */
+/* Push bottom nav bar to bottom of screen on larger displays */
+@media only screen and (min-width: 600px) {
+    html {
+        height: 100%;
+    }
 }
 
 /*
@@ -464,11 +474,17 @@ html {
  */
 
 .input {
+    /* Needed to render inputs & buttons of equal width */
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     margin-top: 1rem;
     margin-bottom: 1rem;
     padding-left: 5px;
     line-height: 1.5rem;
-    /* width: 70%; */
+    width: 80%;
+    /* padding: 0; */
+    /* margin: 0; */
 }
 
 /*
@@ -558,6 +574,67 @@ main {
     flex-grow: 1;
     /* align-items: center; */
     justify-content: center;
+}
+
+/*
+ * METERS
+ */
+
+meter {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    display: block;
+    /* height: 1rem; */
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    width: 100%;
+    /* remove default styling */
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+
+    /* Firefox */
+    background: none; /* remove default background */
+    background-color: var(--near-white);
+    box-shadow: 0 5px 5px -5px #333 inset;
+}
+
+meter::-webkit-meter-bar {
+    background: none; /* remove default background */
+    background-color: var(--near-white);
+    box-shadow: 0 5px 5px -5px #333 inset;
+}
+
+meter::-webkit-meter-optimum-value {
+    background-size: 100% 100%;
+    box-shadow: 0 5px 5px -5px #999 inset;
+    transition: width .5s;
+}
+
+/* Firefox styling */
+meter::-moz-meter-bar {
+    /* background: linear-gradient(90deg, var(--green), var(--red)); */
+    background: var(--blue);
+    background-size: 100% 100%;
+    box-shadow: 0 5px 5px -5px #999 inset;
+}
+
+.meter-gauge {
+    background-color: var(--near-white);
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 5px 5px -5px #333 inset;
+    display: block;
+}
+
+/* Chrome styling */
+.meter-gauge > span {
+    background: var(--blue);
+    background-size: 100% 100%;
+    box-shadow: 0 5px 5px -5px #999 inset;
+    display: block;
+    height: inherit;
+    text-indent: -9999px;
 }
 
 /*
@@ -736,70 +813,4 @@ input:checked + .slider:before {
 p {
     font-family: var(--sans-serif);
     overflow-wrap: anywhere;
-}
-
-input {
-    padding: 0;
-    margin: 0;
-}
-
-/*
- * METERS
- */
-
-meter {
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    display: block;
-    /* height: 1rem; */
-    margin: 0 auto;
-    margin-bottom: 1rem;
-    width: 100%;
-    /* remove default styling */
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
-
-    /* Firefox */
-    background: none; /* remove default background */
-    background-color: var(--near-white);
-    box-shadow: 0 5px 5px -5px #333 inset;
-}
-
-meter::-webkit-meter-bar {
-    background: none; /* remove default background */
-    background-color: var(--near-white);
-    box-shadow: 0 5px 5px -5px #333 inset;
-}
-
-meter::-webkit-meter-optimum-value {
-    background-size: 100% 100%;
-    box-shadow: 0 5px 5px -5px #999 inset;
-    transition: width .5s;
-}
-
-/* Firefox styling */
-meter::-moz-meter-bar {
-    /* background: linear-gradient(90deg, var(--green), var(--red)); */
-    background: var(--blue);
-    background-size: 100% 100%;
-    box-shadow: 0 5px 5px -5px #999 inset;
-}
-
-.meter-gauge {
-    background-color: var(--near-white);
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    box-shadow: 0 5px 5px -5px #333 inset;
-    display: block;
-}
-
-/* Chrome styling */
-.meter-gauge > span {
-    background: var(--blue);
-    background-size: 100% 100%;
-    box-shadow: 0 5px 5px -5px #999 inset;
-    display: block;
-    height: inherit;
-    text-indent: -9999px;
 }
