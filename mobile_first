@@ -1,0 +1,68 @@
+list of attributes to be removed from `peachcloud.css` for mobile
+
+[ tested on Galaxy S5, iPhone 5 ]
+
+@media only screen and (min-width: 350px)
+main {
+    align-items: center;
+}
+
+main {
+    width
+}
+
+card {
+    background-color
+    border-radius
+    /* needed on network_list: maybe set on list-container instead */
+    width: var(--max-width-5);
+    box-shadow
+    margin-top
+    margin-bottom
+}
+
+/* for network_add: may or may not be necessary */
+card-container {
+    padding
+}
+
+list-container {
+    padding
+}
+
+/* network_add: inputs and buttons look nice with this */
+card-container {
+    width: var(--max-width-5);
+}
+
+/* network_add: inputs and buttons look nice with this */
+button {
+    width: 70%;
+    min-width
+    max-width
+    padding
+}
+
+/* needed for desktop (to place bottom nav at bottom of window) */
+html {
+    height: 100%;   /* wrecks bottom nav placement on my phone */
+}
+
+/* ADD THIS */
+input {
+    width: 100%;
+}
+-----
+
+testing with peach-web on laptop:
+
+network_card        | looks good
+network_list        | looks good
+network_add         | too small & buttons (best without card-container class)
+network_detail      | buttons different sizes
+
+look at the .input attributes
+ - we need to have consistency between button & input (esp. widths)
+
+network_detail
+ - sometimes the background colour is white on my phone
