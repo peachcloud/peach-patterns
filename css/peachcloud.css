@@ -101,25 +101,26 @@ body {
     min-height: 50vh;
     max-height: 90vh;
     position: relative;
+    width: 100%;
 }
 
 @media only screen and (min-width: 600px) {
     .card {
         min-height: 50vh;
         max-height: 90vh;
-        width: var(--max-width-5);
+        /* width: var(--max-width-5); */
     }
 }
 
 .card-container {
-    padding: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .card-text {
     margin: 0;
     font-size: var(--font-size-5);
     padding-bottom: 0.3rem;
-    padding-right: 1rem;
 }
 
 /*
@@ -598,7 +599,7 @@ meter::-webkit-meter-optimum-value {
 
 /* Firefox styling */
 meter::-moz-meter-bar {
-    background: var(--blue);
+    background: var(--mid-gray);
     background-size: 100% 100%;
     box-shadow: 0 5px 5px -5px #999 inset;
 }
@@ -613,7 +614,7 @@ meter::-moz-meter-bar {
 
 /* Chrome styling */
 .meter-gauge > span {
-    background: var(--blue);
+    background: var(--mid-gray);
     background-size: 100% 100%;
     box-shadow: 0 5px 5px -5px #999 inset;
     display: block;
