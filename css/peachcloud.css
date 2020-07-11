@@ -265,7 +265,6 @@ body {
     justify-content: center;
 }
 
-/* .card-grid-two { */
 .two-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -278,7 +277,6 @@ body {
     width: 100%;
 }
 
-/* .card-grid-three { */
 .three-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -289,7 +287,6 @@ body {
     width: 100%;
 }
 
-/* .card-grid-vert { */
 .stack {
     display: grid;
     align-items: flex-end;
@@ -298,7 +295,6 @@ body {
     width: 100%;
 }
 
-/* grid-three-icon-1 { */
 .three-grid-icon-1 {
     align-self: center;
     grid-column: 1;
@@ -309,7 +305,6 @@ body {
     text-align: center;
 }
 
-/* .grid-three-icon-2 { */
 .three-grid-icon-2 {
     align-self: center;
     grid-column: 2;
@@ -320,7 +315,6 @@ body {
     text-align: center;
 }
 
-/* .grid-three-icon-3 { */
 .three-grid-icon-3 {
     align-self: center;
     grid-column: 3;
@@ -331,7 +325,6 @@ body {
     text-align: center;
 }
 
-/* .grid-three-label-1 { */
 .three-grid-label-1 {
     align-self: center;
     grid-column: 1;
@@ -340,7 +333,6 @@ body {
     text-align: center;
 }
 
-/* .grid-three-label-2 { */
 .three-grid-label-2 {
     align-self: center;
     grid-column: 2;
@@ -349,7 +341,6 @@ body {
     text-align: center;
 }
 
-/* .grid-three-label-3 { */
 .three-grid-label-3 {
     align-self: center;
     grid-column: 3;
@@ -522,19 +513,19 @@ body {
     width: var(--max-width-5);
 }
 
+.list-icon {
+    align-self: center;
+    justify-self: right;
+    grid-column: 2;
+    grid-row: 1/3;
+}
+
 .list-item {
     display: grid;
     padding: 1rem;
     border-bottom-color: var(--light-silver);
     border-bottom-style: solid;
     border-bottom-width: 1px;
-}
-
-.list-icon {
-    align-self: center;
-    justify-self: right;
-    grid-column: 2;
-    grid-row: 1/3;
 }
 
 .list-text {
