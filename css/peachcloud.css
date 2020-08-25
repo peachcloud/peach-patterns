@@ -9,7 +9,6 @@
  * - BUTTONS
  * - CARDS
  * - CIRCLES
- * - DEGREES
  * - GRIDS
  * - HTML
  * - FLASH MESSAGE
@@ -51,6 +50,50 @@
 .push-right {
     margin-left: auto;
     padding-right: 0;
+}
+
+.top-left {
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+.top-right {
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+.top-middle {
+    margin: auto;
+    margin-top: 0;
+}
+
+.middle {
+    margin: auto;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.bottom-middle {
+    margin: auto;
+    margin-bottom: 0;
+}
+
+.bottom-left {
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: auto;
+}
+
+.bottom-right {
+    margin-left: 0;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: auto;
 }
 
 /*
@@ -108,7 +151,7 @@ body {
     .card {
         min-height: 50vh;
         max-height: 90vh;
-        /* width: var(--max-width-5); */
+        width: var(--max-width-5);
     }
 }
 
@@ -128,16 +171,27 @@ body {
  */
 
 .circle {
+    align-items: center;
     border-radius: 50%;
     box-shadow: var(--box-shadow-3);
     display: flex;
-    align-items: center;
     justify-content: center;
-    line-height: 0;
-    padding: 25% 0;
     position: relative;
-    width: 50%;
-    height: 0;
+}
+
+.circle-small {
+    height: 5rem;
+    width: 5rem;
+}
+
+.circle-medium {
+    height: 8rem;
+    width: 8rem;
+}
+
+.circle-large {
+    height: 13rem;
+    width: 13rem;
 }
 
 .circle-success {
@@ -182,81 +236,27 @@ body {
     left: 1.5em;
 }
 
-.top-left {
-    position: relative;
-    border-top-left-radius: 100%;
-    background: #09f;
-    float: left;
-    box-shadow: var(--box-shadow-2);
-}
-
-.top-right {
-    position: relative;
-    border-top-right-radius: 100%;
-    background: #666;
-    float: right;
-    box-shadow: var(--box-shadow-2);
-}
-
-.bottom-left {
-    position: relative;
-    border-bottom-left-radius: 100%;
-    background: #aaa;
-    float: left;
-    box-shadow: var(--box-shadow-2);
-    bottom: 0;
-}
-
-.bottom-right{
-    position: relative;
-    border-bottom-right-radius: 100%;
-    background: #333;
-    float: right;
-    right: 0;
-    bottom: 0;
-}
-
-/*
- * DEGREES
- */
-
-/* degree-x: positions around the radial menu (used to position menu icons)
-/* 12em = half the width of the radial menu (wrapper) */
-.degree-0 {
-    transform: translate(12em);
-}
-
-.degree-45 {
-    transform: rotate(45deg) translate(12em) rotate(-45deg);
-}
-
-.degree-90 {
-    transform: rotate(90deg) translate(12em) rotate(-90deg);
-}
-
-.degree-135 {
-    transform: rotate(135deg) translate(12em) rotate(-135deg);
-}
-
-.degree-180 {
-    transform: translate(-12em);
-}
-
-.degree-225 {
-    transform: rotate(225deg) translate(12em) rotate(-225deg);
-}
-
-.degree-270 {
-    transform: rotate(270deg) translate(12em) rotate(-270deg);
-}
-
-.degree-315 {
-    transform: rotate(315deg) translate(12em) rotate(-315deg);
-}
-
 /*
  * GRIDS
  */
+
+.grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    height: 80vh;
+    margin-top: 10vh;
+}
+
+@media only screen and (min-width: 600px) {
+    .grid {
+        display: grid;
+        grid-template-columns: auto 25% auto;
+        grid-template-rows: auto auto auto;
+        height: 80vh;
+        margin-top: 10vh;
+    }
+}
 
 .flex-grid {
     display: flex;
@@ -646,51 +646,6 @@ meter::-moz-meter-bar {
 .nav-item {
     display: inline-block;
     list-style-type: none;
-}
-
-/*
- * RADIAL MENU
- */
-
-/* radial-menu: a circular menu container */
-.radial-menu {
-    border-radius: 50%;
-    height: 24em;
-    margin: 1.75em auto 0;
-    padding: 4em;
-    position: relative;
-    width: 24em;
-}
-
-.radial-link-position {
-    height: 4em;
-    left: 50%;
-    margin: -2em;
-    position: absolute;
-    top: 50%;
-    width: 4em;
-}
-
-/* radial-circle: circle for radial-menu links */
-.radial-circle {
-    align-items: center;
-    background-color: var(--near-white);
-    border-radius: 50%;
-    box-shadow: var(--box-shadow-3);
-    display: flex;
-    height: 4em;
-    left: 50%;
-    margin: -2em;
-    position: absolute;
-    top: 50%;
-    width: 4em;
-}
-
-.radial-center-circle {
-    height: 45%;
-    position: absolute;
-    top: 50%;
-    width: 45%;
 }
 
 /*
