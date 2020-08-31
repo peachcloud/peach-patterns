@@ -121,8 +121,14 @@
             <p>Standard input with button</p>
             <!-- Standard input with button -->
             <div class="card-container">
-                <input class="input" type="password" placeholder="Password" title="Password for access point"></input>
+                <input class="input" type="password" placeholder="Password" title="Password for access point">
                 <button class="button">Connect</button>
+            </div>
+            <p>Standard input with label and unit</p>
+            <!-- Standard input with label and unit -->
+            <div class="card-container">
+                <label class="label-small">WARNING THRESHOLD</label>
+                <label class="list-text font-near-black"><input class="input" style="text-align: right; width: 150px; margin-right: 5px;" placeholder="0" type="text" title="Warning threshold value">MB</label>
             </div>
             <hr style="width: 100%;">
             <h3>Labels</h3>
@@ -600,12 +606,117 @@
                     <!-- Standard input with button -->
                     <div class="card-container">
                         <h1 class="bold center-text title-medium">Add WiFi Network</h1>
-                        <input class="center input" type="text" placeholder="SSID" title="Network name (SSID) for WiFi access point"></input>
-                        <input class="center input" type="password" placeholder="Password" title="Password for WiFi access point"></input>
+                        <input class="center input" type="text" placeholder="SSID" title="Network name (SSID) for WiFi access point">
+                        <input class="center input" type="password" placeholder="Password" title="Password for WiFi access point">
                         <button class="center button">Connect</button>
                         <button class="center button">Cancel</button>
                         <!-- NOTE : used to share ux information with the user -->
                         <p class="label-small font-gray" style="padding-left: 5px;">This website will be unresponsive while the access point is disabled and the WiFi connection attempt is made.</p>
+                    </div>
+                </div>
+                <!-- Bottom nav bar -->
+                <nav class="nav-bar">
+                    <a class="nav-item" href="https://scuttlebutt.nz/">
+                        <img class="icon-medium nav-icon-left" title="Scuttlebutt Website" src="icons/hermies.png" alt="Logo for Secure Scuttlebutt: Hermies the Hermit Crab contained within a hexagon">
+                    </a>
+                    <a class="nav-item push-right" href="/help">
+                        <img class="icon-medium nav-icon-right icon-active" title="Help" src="icons/question-circle.svg" alt="Question symbol inside of a circle">
+                    </a>
+                </nav>
+            </div>
+            <hr style="width: 100%;">
+            <h3>WiFi Data Alerts with Nav Bars</h3>
+            <!-- WiFi data alerts with nav bars -->
+            <div style="background-color: var(--moon-gray);">
+                <!-- Top nav bar -->
+                <nav class="nav-bar">
+                    <a class="nav-item" href="/">
+                        <img class="icon nav-icon-left" src="icons/peach-icon.png" alt="PeachCloud logo consisting of a peach with green leaves on the left and two overlapping clouds to the right" title="Home">
+                    </a>
+                    <a class="nav-item" href="" title="Back">
+                        <img class="icon-medium nav-icon-left icon-active" src="icons/back.svg" alt="Greater-than symbol or backward-facing arrow">
+                    </a>
+                    <a class="nav-item push-right" href="/logout" title="Logout">
+                        <img class="icon-medium nav-icon-right icon-active" src="icons/exit.svg" alt="Exit icon: an arrow pointing out from an open door">
+                    </a>
+                    <a class="nav-item" href="/shutdown" title="Shutdown">
+                        <img class="icon-medium nav-icon-right icon-active" src="icons/power-switch.svg" alt="Power-switch icon">
+                    </a>
+                </nav>
+                <!-- NETWORK CARD -->
+                <!-- WIFI DATA ALERTS -->
+                <div class="card center">
+                    <div class="card-container container" style="border: 1px solid #111;">
+                        <div class="center">
+                            <img class="icon" title="Download" src="icons/down-arrow.svg">
+                        </div>
+                        <div style="justify-self: center;">
+                            <p class="card-text label-medium" style="padding-bottom: 0;">WiFi</p>
+                            <label class="label-small">DOWNLOAD TOTAL</label>
+                        </div>
+                        <div style="justify-self: left;">
+                            <div class="flex-grid">
+                                <label class="label-large" title="Data download total in MB">158</label>
+                                <label class="label-small font-near-black">MB</label>
+                            </div>
+                        </div>
+                        <div class="center">
+                            <img class="icon" title="Warning" src="icons/alert.svg">
+                        </div>
+                        <div style="justify-self: center;">
+                            <label class="list-text font-near-black"><input class="alert-input" placeholder="0" type="text" title="Warning threshold value">MB</label>
+                            <label class="label-small" style="padding-top: 0.25rem;">WARNING THRESHOLD</label>
+                        </div>
+                        <div>
+                        </div>
+                        <div class="center">
+                            <img class="icon" title="Critical" src="icons/scissor.svg">
+                        </div>
+                        <div style="justify-self: center;">
+                            <label class="list-text font-near-black"><input class="alert-input" placeholder="0" type="text" title="Warning threshold value">MB</label>
+                            <label class="label-small" style="padding-top: 0.25rem;">CRITICAL THRESHOLD</label>
+                        </div>
+                        <div>
+                        </div>
+                    </div>
+                    <div class="card-container container" style="border: solid 1px #111;">
+                        <div class="center">
+                            <img class="icon" title="Upload" src="icons/up-arrow.svg">
+                        </div>
+                        <div style="justify-self: center;">
+                            <p class="card-text label-medium" style="padding-bottom: 0;">WiFi</p>
+                            <label class="label-small">UPLOAD TOTAL</label>
+                        </div>
+                        <div style="justify-self: left;">
+                            <div class="flex-grid">
+                                <label class="label-large" title="Data upload total in MB">715</label>
+                                <label class="label-small font-near-black">MB</label>
+                            </div>
+                        </div>
+                        <div class="center">
+                            <img class="icon" title="Warning" src="icons/alert.svg">
+                        </div>
+                        <div style="justify-self: center;">
+                            <label class="list-text font-near-black"><input class="alert-input" placeholder="0" type="text" title="Warning threshold value">MB</label>
+                            <label class="label-small" style="padding-top: 0.25rem;">WARNING THRESHOLD</label>
+                        </div>
+                        <div>
+                        </div>
+                        <div class="center">
+                            <img class="icon" title="Critical" src="icons/scissor.svg">
+                        </div>
+                        <div style="justify-self: center;">
+                            <label class="list-text font-near-black"><input class="alert-input" placeholder="0" type="text" title="Warning threshold value">MB</label>
+                            <label class="label-small" style="padding-top: 0.25rem;">CRITICAL THRESHOLD</label>
+                        </div>
+                        <div>
+                        </div>
+                    </div>
+                    <div>
+                        <div style="grid-column-start: 1; grid-column-end: 4;">
+                            <button class="center button">Update</button>
+                            <button class="center button">Cancel</button>
+                        </div>
                     </div>
                 </div>
                 <!-- Bottom nav bar -->

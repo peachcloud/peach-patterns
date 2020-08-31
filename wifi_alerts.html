@@ -1,0 +1,106 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>peach-patterns</title>
+    <meta name="description" content="PeachCloud Pattern Library">
+    <meta name="author" content="glyph">
+    <link rel="stylesheet" href="css/peachcloud.css">
+    <style>@import url("css/_variables.css");</style>
+    </head>
+
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 2fr 3fr 2fr;
+            grid-template-rows: auto;
+            grid-row-gap: 0.5rem;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .input {
+            margin-bottom: 0;
+        }
+    </style>
+
+    <body style="background-color: var(--near-white);">
+    <main>
+      <div class="card center" style="width: 100%; margin-top: 1rem;">
+        <div class="card-container container" style="border: 1px solid #111;">
+            <div class="center">
+                <img class="icon" title="Download" src="icons/down-arrow.svg">
+            </div>
+            <div>
+                <p class="card-text label-medium" style="padding-bottom: 0;">WiFi</p>
+                <label class="label-small">DOWNLOAD TOTAL</label>
+            </div>
+            <div style="justify-self: left;">
+                <div class="flex-grid">
+                    <label class="label-large" title="Data download total in MB">158</label>
+                    <label class="label-small font-near-black">MB</label>
+                </div>
+            </div>
+            <div class="center">
+                <img class="icon" title="Warning" src="icons/alert.svg">
+            </div>
+            <div>
+                <label class="list-text font-near-black"><input class="input" style="text-align: right; width: 7rem; margin-right: 5px;" placeholder="0" type="text" title="Warning threshold value">MB</label>
+                <label class="label-small" style="padding-top: 0.25rem;">WARNING THRESHOLD</label>
+            </div>
+            <div>
+            </div>
+            <div class="center">
+                <img class="icon" title="Critical" src="icons/scissor.svg">
+            </div>
+            <div>
+                <label class="list-text font-near-black"><input class="input" style="text-align: right; width: 7rem; margin-right: 5px;" placeholder="0" type="text" title="Warning threshold value">MB</label>
+                <label class="label-small" style="padding-top: 0.25rem;">CRITICAL THRESHOLD</label>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div class="card-container container" style="border: solid 1px #111;">
+            <div class="center">
+                <img class="icon" title="Upload" src="icons/up-arrow.svg">
+            </div>
+            <div>
+                <p class="card-text label-medium" style="padding-bottom: 0;">WiFi</p>
+                <label class="label-small">UPLOAD TOTAL</label>
+            </div>
+            <div style="justify-self: left;">
+                <div class="flex-grid">
+                    <label class="label-large" title="Data upload total in MB">715</label>
+                    <label class="label-small font-near-black">MB</label>
+                </div>
+            </div>
+            <div class="center">
+                <img class="icon" title="Warning" src="icons/alert.svg">
+            </div>
+            <div>
+                <label class="list-text font-near-black"><input class="input" style="text-align: right; width: 7rem; margin-right: 5px;" placeholder="0" type="text" title="Warning threshold value">MB</label>
+                <label class="label-small" style="padding-top: 0.25rem;">WARNING THRESHOLD</label>
+            </div>
+            <div>
+            </div>
+            <div class="center">
+                <img class="icon" title="Critical" src="icons/scissor.svg">
+            </div>
+            <div>
+                <label class="list-text font-near-black"><input class="input" style="text-align: right; width: 7rem; margin-right: 5px;" placeholder="0" type="text" title="Warning threshold value">MB</label>
+                <label class="label-small" style="padding-top: 0.25rem;">CRITICAL THRESHOLD</label>
+            </div>
+            <div>
+            </div>
+        </div>
+        <div>
+            <div style="grid-column-start: 1; grid-column-end: 4;">
+                <button class="center button">Update</button>
+                <button class="center button">Cancel</button>
+            </div>
+        </div>
+      </div>
+    </main>
+    </body>
+</html>
