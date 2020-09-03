@@ -5,7 +5,6 @@
  *
  * Index
  * - ALIGNMENT
- * - BODY
  * - BUTTONS
  * - CARDS
  * - CIRCLES
@@ -18,7 +17,6 @@
  * - LABELS
  * - LINKS
  * - LISTS
- * - MAIN
  * - METERS
  * - NAVIGATION
  * - RADIAL MENU
@@ -120,23 +118,6 @@
         place-self: start;
     }
 }
-
-/*
- * BODY
- */
-/*
-body {
-    align-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--gray);
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-*/
 
 /*
  * BUTTONS
@@ -577,18 +558,6 @@ body {
     grid-column: 1;
     grid-row: 2;
 }
-
-/*
- * MAIN
- */
-/*
-main {
-    min-width: var(--max-width-5);
-    display: flex;
-    flex-grow: 1;
-    justify-content: center;
-}
-*/
 
 /*
  * METERS
