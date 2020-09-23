@@ -206,32 +206,58 @@
             </div>
             <p>Three-across stack</p>
             <!-- THREE-ACROSS STACK -->
-            <div class="card-container">
-                <div class="three-grid">
-                    <div class="stack">
-                        <img class="icon" title="Download" src="icons/down-arrow.svg">
-                        <div class="flex-grid" style="padding-top: 0.5rem;">
-                            <label class="label-medium" style="padding-right: 3px;" title="Data download total in MB">158</label>
-                            <label class="label-small font-near-black">MB</label>
-                        </div>
-                        <label class="label-small font-gray">DOWNLOAD</label>
+            <div class="three-grid">
+                <div class="stack">
+                    <img class="icon" title="Download" src="icons/down-arrow.svg">
+                    <div class="flex-grid" style="padding-top: 0.5rem;">
+                        <label class="label-medium" style="padding-right: 3px;" title="Data download total in MB">158</label>
+                        <label class="label-small font-near-black">MB</label>
                     </div>
-                    <div class="stack">
-                        <img class="icon" title="Upload" src="icons/up-arrow.svg">
-                        <div class="flex-grid" style="padding-top: 0.5rem;">
-                            <label class="label-medium" style="padding-right: 3px;" title="Data upload total in GB">16</label>
-                            <label class="label-small font-near-black">GB</label>
-                        </div>
-                        <label class="label-small font-gray">UPLOAD</label>
-                    </div>
-                    <div class="stack">
-                        <img class="icon" title="Connected devices" src="icons/devices.svg">
-                        <div class="flex-grid" style="padding-top: 0.5rem;">
-                            <label class="label-medium" style="padding-right: 3px;" title="Number of connected devices">3</label>
-                        </div>
-                        <label class="label-small font-gray">DEVICES</label>
-                    </div>
+                    <label class="label-small font-gray">DOWNLOAD</label>
                 </div>
+                <div class="stack">
+                    <img class="icon" title="Upload" src="icons/up-arrow.svg">
+                    <div class="flex-grid" style="padding-top: 0.5rem;">
+                        <label class="label-medium" style="padding-right: 3px;" title="Data upload total in GB">16</label>
+                        <label class="label-small font-near-black">GB</label>
+                    </div>
+                    <label class="label-small font-gray">UPLOAD</label>
+                </div>
+                <div class="stack">
+                    <img class="icon" title="Connected devices" src="icons/devices.svg">
+                    <div class="flex-grid" style="padding-top: 0.5rem;">
+                        <label class="label-medium" style="padding-right: 3px;" title="Number of connected devices">3</label>
+                    </div>
+                    <label class="label-small font-gray">DEVICES</label>
+                </div>
+            </div>
+            <p>Three-across stack with capules</p>
+            <!-- THREE-ACROSS STACK WITH CAPSULES -->
+            <div class="three-grid">
+                <div class="stack capsule">
+                    <img class="icon" title="Download" src="icons/down-arrow.svg">
+                    <div class="flex-grid" style="padding-top: 0.5rem;">
+                        <label class="label-medium" style="padding-right: 3px;" title="Data download total in MB">158</label>
+                        <label class="label-small font-near-black">MB</label>
+                    </div>
+                    <label class="label-small font-gray">DOWNLOAD</label>
+                </div>
+                <div class="stack capsule success-border">
+                    <img class="icon" title="Upload" src="icons/up-arrow.svg">
+                    <div class="flex-grid" style="padding-top: 0.5rem;">
+                        <label class="label-medium" style="padding-right: 3px;" title="Data upload total in GB">16</label>
+                        <label class="label-small font-near-black">GB</label>
+                    </div>
+                    <label class="label-small font-gray">UPLOAD</label>
+                </div>
+                <div class="stack capsule warning-border">
+                    <img class="icon" title="Connected devices" src="icons/devices.svg">
+                    <div class="flex-grid" style="padding-top: 0.5rem;">
+                        <label class="label-medium" style="padding-right: 3px;" title="Number of connected devices">3</label>
+                    </div>
+                    <label class="label-small font-gray">DEVICES</label>
+                </div>
+            </div>
             <hr style="width: 100%;">
             <h3>Lists</h3>
             <!-- LISTS -->
@@ -419,7 +445,7 @@
                             <label class="center label-small font-gray" title="Access Point Status">ONLINE</label>
                         </div>
                         <!-- right column -->
-                        <div class="grid-column-2">
+                        <div class="grid-column-2 capsule success-border">
                             <label class="label-small font-gray" title="Network Mode">MODE</label>
                             <p class="card-text" title="Network Mode">Access Point</p>
                             <label class="label-small font-gray" title="Access Point SSID">SSID</label>
@@ -428,8 +454,8 @@
                             <p class="card-text" title="IP">11.11.11.10</p>
                         </div>
                     </div>
-                    <button class="button center">Enable WiFi</button>
-                    <button class="button center">Add WiFi Network</button>
+                    <button class="button button-primary center">Enable WiFi</button>
+                    <button class="button button-primary center">Add WiFi Network</button>
                     <!-- CARD GRID -->
                     <div class="card-container">
                         <!-- row of icons representing network statistics -->
@@ -487,12 +513,12 @@
                     <div class="list-container center">
                         <h1 class="bold center-text title-medium">WiFi Networks</h1>
                         <ul class="list">
-                            <li class="list-item">
+                            <li class="list-item primary-bg">
                                 <img class="icon icon-active icon-medium list-icon" src="icons/wifi.svg">
                                 <p class="list-text">Cottage</p>
                                 <label class="label-small list-label font-gray" title="Status">Connected</label>
                             </li>
-                            <li class="list-item">
+                            <li class="list-item secondary-bg">
                                 <img class="icon icon-inactive icon-medium list-icon" src="icons/wifi.svg">
                                 <p class="list-text">TranquilGarden</p>
                                 <label class="label-small list-label font-gray" title="Status">Available</label>
@@ -555,7 +581,7 @@
                             <label class="center label-small font-gray" title="Access Point Status">AVAILABLE</label>
                         </div>
                         <!-- right column -->
-                        <div class="grid-column-2">
+                        <div class="grid-column-2 capsule dark-gray-bg">
                             <label class="label-small font-gray" title="Access Point SSID">SSID</label>
                             <p class="card-text" title="SSID">TranquilGarden</p>
                             <label class="label-small font-gray" title="Access Point key management protocol">SECURITY</label>
@@ -566,9 +592,9 @@
                     </div>
                     <!-- Standard input with button -->
                     <div class="card-container" style="padding-top: 0;">
-                        <button class="center button">Connect</button>
-                        <button class="center button">Modify</button>
-                        <button class="center button">Forget</button>
+                        <button class="center button button-primary">Connect</button>
+                        <button class="center button button-secondary">Modify</button>
+                        <button class="center button button-warning">Forget</button>
                     </div>
                 </div>
                 <!-- Bottom nav bar -->
@@ -608,8 +634,8 @@
                         <h1 class="bold center-text title-medium">Add WiFi Network</h1>
                         <input class="center input" type="text" placeholder="SSID" title="Network name (SSID) for WiFi access point">
                         <input class="center input" type="password" placeholder="Password" title="Password for WiFi access point">
-                        <button class="center button">Connect</button>
-                        <button class="center button">Cancel</button>
+                        <button class="center button button-primary">Connect</button>
+                        <button class="center button button-secondary">Cancel</button>
                         <!-- NOTE : used to share ux information with the user -->
                         <p class="label-small font-gray" style="padding-left: 5px;">This website will be unresponsive while the access point is disabled and the WiFi connection attempt is made.</p>
                     </div>
@@ -718,8 +744,8 @@
                     </div>
                     <div>
                         <div style="grid-column-start: 1; grid-column-end: 4;">
-                            <button class="center button">Update</button>
-                            <button class="center button">Cancel</button>
+                            <button class="center button button-primary">Update</button>
+                            <button class="center button button-secondary">Cancel</button>
                         </div>
                     </div>
                 </div>
