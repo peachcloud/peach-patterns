@@ -436,7 +436,7 @@
                 <!-- NETWORK CARD -->
                 <div class="card center">
                     <!-- NETWORK INFO BOX -->
-                    <div class="two-grid" title="PeachCloud network mode and status">
+                    <div class="two-grid capsule success-border" title="PeachCloud network mode and status">
                         <!-- NETWORK STATUS ICON -->
                         <!-- icon with label molecule -->
                         <!-- left column -->
@@ -445,7 +445,7 @@
                             <label class="center label-small font-gray" title="Access Point Status">ONLINE</label>
                         </div>
                         <!-- right column -->
-                        <div class="grid-column-2 capsule success-border">
+                        <div class="grid-column-2">
                             <label class="label-small font-gray" title="Network Mode">MODE</label>
                             <p class="card-text" title="Network Mode">Access Point</p>
                             <label class="label-small font-gray" title="Access Point SSID">SSID</label>
@@ -556,6 +556,7 @@
                     <a class="nav-item" href="" title="Back">
                         <img class="icon-medium nav-icon-left icon-active" src="icons/back.svg" alt="Greater-than symbol or backward-facing arrow">
                     </a>
+                    <p class="text-center">WiFi Access Point</p>
                     <a class="nav-item push-right" href="/logout" title="Logout">
                         <img class="icon-medium nav-icon-right icon-active" src="icons/exit.svg" alt="Exit icon: an arrow pointing out from an open door">
                     </a>
@@ -572,7 +573,7 @@
                     <!-- input for password -->
                     <!-- connect button -->
                     <!-- cancel button -->
-                    <div class="two-grid" title="PeachCloud network mode and status">
+                    <div class="two-grid capsule" title="PeachCloud network mode and status">
                         <!-- NETWORK STATUS ICON -->
                         <!-- icon with label molecule -->
                         <!-- left column -->
@@ -581,9 +582,9 @@
                             <label class="center label-small font-gray" title="Access Point Status">AVAILABLE</label>
                         </div>
                         <!-- right column -->
-                        <div class="grid-column-2 capsule dark-gray-bg">
+                        <div class="grid-column-2">
                             <label class="label-small font-gray" title="Access Point SSID">SSID</label>
-                            <p class="card-text" title="SSID">TranquilGarden</p>
+                            <p class="card-text" title="SSID">ZenGarden</p>
                             <label class="label-small font-gray" title="Access Point key management protocol">SECURITY</label>
                             <p class="card-text" title="Key management protocol of WiFi access point">WPA2-PSK</p>
                             <label class="label-small font-gray" title="Signal Strength">SIGNAL</label>
@@ -637,7 +638,9 @@
                         <button class="center button button-primary">Connect</button>
                         <button class="center button button-secondary">Cancel</button>
                         <!-- NOTE : used to share ux information with the user -->
-                        <p class="label-small font-gray" style="padding-left: 5px;">This website will be unresponsive while the access point is disabled and the WiFi connection attempt is made.</p>
+                        <div class="capsule info-border">
+                            <p class="label-small font-gray" style="padding-left: 5px;">This website will be unresponsive while the access point is disabled and the WiFi connection attempt is made.</p>
+                        </div>
                     </div>
                 </div>
                 <!-- Bottom nav bar -->
@@ -651,7 +654,7 @@
                 </nav>
             </div>
             <hr style="width: 100%;">
-            <h3>WiFi Data Alerts with Nav Bars</h3>
+            <h3>WiFi Data Total and Alerts with Nav Bars</h3>
             <!-- WiFi data alerts with nav bars -->
             <div style="background-color: var(--moon-gray);">
                 <!-- Top nav bar -->
@@ -671,75 +674,34 @@
                 </nav>
                 <!-- NETWORK CARD -->
                 <!-- WIFI DATA ALERTS -->
-                <div class="card center">
+                <div class="card center card-container">
+                    <div class="stack capsule">
+                        <div class="flex-grid">
+                            <label class="label-large" title="Data download total in MB">158</label>
+                            <label class="label-small font-near-black">MB</label>
+                        </div>
+                        <label class="center-text label-small font-gray">USAGE TOTAL</label>
+                    </div>
                     <div class="card-container container">
-                        <div class="center">
-                            <img class="icon" title="Download" src="icons/down-arrow.svg">
-                        </div>
-                        <div style="justify-self: center;">
-                            <p class="card-text label-medium" style="padding-bottom: 0;">WiFi</p>
-                            <label class="label-small font-gray">DOWNLOAD TOTAL</label>
-                        </div>
-                        <div style="justify-self: left;">
-                            <div class="flex-grid">
-                                <label class="card-text label-large" title="Data download total in MB">158</label>
-                                <label class="label-small font-near-black">MB</label>
-                            </div>
-                        </div>
-                        <div class="center">
+                        <div>
                             <img class="icon" title="Warning" src="icons/alert.svg">
                         </div>
-                        <div style="justify-self: center;">
+                        <div>
                             <label class="label-small font-near-black"><input class="alert-input" placeholder="0" type="text" title="Warning threshold value">MB</label>
                             <label class="label-small font-gray" style="padding-top: 0.25rem;">WARNING THRESHOLD</label>
                         </div>
                         <div>
                             <input title="Activate download warning" type="checkbox">
                         </div>
-                        <div class="center">
+                        <div>
                             <img class="icon" title="Cutoff" src="icons/scissor.svg">
                         </div>
-                        <div style="justify-self: center;">
+                        <div>
                             <label class="label-small font-near-black"><input class="alert-input" placeholder="0" type="text" title="Cutoff threshold value">MB</label>
                             <label class="label-small font-gray" style="padding-top: 0.25rem;">CUTOFF THRESHOLD</label>
                         </div>
                         <div>
                             <input title="Activate download cutoff" type="checkbox">
-                        </div>
-                    </div>
-                    <div class="card-container container">
-                        <div class="center">
-                            <img class="icon" title="Upload" src="icons/up-arrow.svg">
-                        </div>
-                        <div style="justify-self: center;">
-                            <p class="card-text label-medium" style="padding-bottom: 0;">WiFi</p>
-                            <label class="label-small font-gray">UPLOAD TOTAL</label>
-                        </div>
-                        <div style="justify-self: left;">
-                            <div class="flex-grid">
-                                <label class="card-text label-large" title="Data upload total in MB">715</label>
-                                <label class="label-small font-near-black">MB</label>
-                            </div>
-                        </div>
-                        <div class="center">
-                            <img class="icon" title="Warning" src="icons/alert.svg">
-                        </div>
-                        <div style="justify-self: center;">
-                            <label class="label-small font-near-black"><input class="alert-input" placeholder="0" type="text" title="Warning threshold value">MB</label>
-                            <label class="label-small font-gray" style="padding-top: 0.25rem;">WARNING THRESHOLD</label>
-                        </div>
-                        <div>
-                            <input title="Activate upload warning" type="checkbox">
-                        </div>
-                        <div class="center">
-                            <img class="icon" title="Cutoff" src="icons/scissor.svg">
-                        </div>
-                        <div style="justify-self: center;">
-                            <label class="label-small font-near-black"><input class="alert-input" placeholder="0" type="text" title="Cutoff threshold value">MB</label>
-                            <label class="label-small font-gray" style="padding-top: 0.25rem;">CUTOFF THRESHOLD</label>
-                        </div>
-                        <div>
-                            <input title="Activate upload cutoff" type="checkbox">
                         </div>
                     </div>
                     <div>

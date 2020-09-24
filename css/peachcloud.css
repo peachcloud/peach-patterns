@@ -192,6 +192,8 @@
     border: var(--border-width-1) solid;
     border-radius: var(--border-radius-3);
     background-color: var(--light-gray);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 /*
@@ -233,6 +235,7 @@
     align-items: center;
     justify-items: center;
     margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 /*
@@ -333,6 +336,10 @@
     background-color: var(--danger);
 }
 
+.light-bg {
+    background-color: var(--light);
+}
+
 .primary-border {
     border-color: var(--primary);
 }
@@ -382,9 +389,10 @@
     align-items: center;
     justify-content: center;
     justify-items: center;
+    margin-right: 2rem;
+    margin-left: 2rem;
     padding-top: 1.5rem;
     padding-bottom: 1rem;
-    width: 100%;
 }
 
 .three-grid {
@@ -394,7 +402,6 @@
     grid-gap: 10px;
     align-items: center;
     justify-content: center;
-    width: 100%;
 }
 
 .stack {
