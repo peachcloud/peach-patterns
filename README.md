@@ -1,3 +1,7 @@
+⚠️ This repo is no longer active and has been archived. The active repo can be found at https://git.coopcloud.tech/PeachCloud/peach-workspace/src/branch/main/peach-patterns ⚠️
+
+-----
+
 # peach-patterns
 
 A pattern library for building and maintaining PeachCloud user interfaces.
